@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en"
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>Matthew Olsson - Battle Modelling</title>
+    <link href="style.css" rel ="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class = "navbar">
+        <a href="index.html" class = "navlogo">Matthew Olsson</a>
+        <ul>
+            <li><a href="index.html">home</a></li>
+            <li><a href="projects.html">projects</a></li>
+            <li><a href="blog.html">blog</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="project">
+            <h1>battle model</h1>
+            <br>
+            <h2>summary</h2>
+                <p>This is a Battle Modelling program that simulates a battle with simulations by the day. It is done by having two equations that represent the first order differential equation of the armies (Lanchester Equations).</p>
+                <p><i>x<sub>n+1</sub> = x<sub>n</sub> - ay<sub>n</sub> + rT<sub>x</sub></i></p>
+                <p><i>y<sub>n+1</sub> = y<sub>n</sub> - bx<sub>n</sub> + sT<sub>y</i></sub></p>
+                <p>The program then uses an analytical method to solve for the general equations. This allows for us to calculate the number of soldiers by inputting the armies inital strengths. The <i>xₙ</i> and <i>yₙ</i> quantities are the initial amount of troops for each respective army. The a and b variables are the armies rate of attack and should range from 0 to 1. The <i>Tₓ</i> and <i>Tᵧ</i> variables give the number of redeployments per day.</p>
+                <br>
+            <h2>how it works</h2>
+                <p>The program works by inputting the initial number of troops into the <i>xₙ</i> and <i>yₙ</i> boxes. You then choose your rate of attack for each army and write them into boxes <i>a</i> and <i>b</i>. Enter in the amount of redeployments for each army via the <i>Tₓ</i> and <i>Tᵧ</i> boxes. If you wish to simulate the total war, enter in the total number of days you wish to simulate and click "Go to War!". If you wish to view the war at a tactical day by day viewing, then enter in 1 into the days to simulate and click the "Day by Day" button each time you want to simulate another day.</p>          
+            <br>
+            <h2>example</h2>
+                <p>Here is a quick example of a battle being simulated. The thought behind the example is that the Red army is attacking the Blue army who is deceptively small. There replenishments is indictative that they were ready to fight and accommodate at such. The Red army however manages to survive and win around the 50 day mark.</p>
+                <br>
+                <img class="imgcontent"
+                    src="img/battlemodelling.gif" 
+                    alt="Battle Modelling Example">
+            </div>
+        <div>
+            <img src="img/warroom.jpg"
+                 alt="War Room">
+        </div>
+    </main>
+    <div class="footer">
+        Matthew Olsson, 2021.
+    </div>
+</body>
