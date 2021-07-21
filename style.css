@@ -59,7 +59,7 @@ title{
 body{
     background-color: #F5F5F5;
     width: 100%;
-    line-height: 1em;
+    line-height: normal;
 }
 .content{
     font-family: 'Ubuntu', sans-serif;
@@ -86,7 +86,6 @@ h1{
     font-size: 4em;
     color: black;
     font-weight: bold;
-    margin-bottom 4em;
 }
 h2{
     font-size: 2em;
