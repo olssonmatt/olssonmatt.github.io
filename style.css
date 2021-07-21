@@ -9,6 +9,7 @@ title{
     color: black;
 }
 .navbar{
+    display: block;
     background-color: #F5F5F5;
     color:black;
     border-bottom: 0.5px dotted black;
@@ -100,14 +101,14 @@ main{
     background-color: #F5F5F5;
 }
 .btns{
-    margin-top: 7.5%;
+    margin-top: 30px;
     background: #E0E0E0;
     cursor: pointer;
     color: black;
     padding: 10px 20px;
     float: left;
     border: 0;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 .btns:hover{
     background: #90CAF9;
