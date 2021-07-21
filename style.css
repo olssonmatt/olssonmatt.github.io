@@ -59,6 +59,7 @@ title{
 body{
     background-color: #F5F5F5;
     width: 100%;
+    line-height: 1em;
 }
 .content{
     font-family: 'Ubuntu', sans-serif;
