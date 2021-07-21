@@ -64,22 +64,22 @@ body{
     font-family: 'Ubuntu', sans-serif;
     background-color: #F5F5F5;
     color: black;
-    margin-top: 15em;
-    margin-left: 10em;
+    margin-top: 20em;
+    margin-left: 5em;
 }
 .project{
     font-family: 'Ubuntu', sans-serif;
     background-color: #F5F5F5;
     color: black;
     margin-top: 10em;
-    margin-left: 10em;
+    margin-left: 5em;
 }
 .projecttwo{
     font-family: 'Ubuntu', sans-serif;
     background-color: #F5F5F5;
     color: black;
     margin-top: 10em;
-    margin-left: 10em;
+    margin-left: 5em;
 }
 h1{
     font-size: 4em;
@@ -102,22 +102,22 @@ main{
     background-color: #F5F5F5;
 }
 .btns{
-    margin-top: 30px;
+    margin-top: 1em;
     background: #E0E0E0;
     cursor: pointer;
     color: black;
-    padding: 0.2em 0.5em;
+    padding: 0.5em 1em;
     float: center;
     border: 0;
-    border-radius: 0.2em;
+    border-radius: 0.5em;
 }
 .btns:hover{
     background: #90CAF9;
 }
 img{
-    margin-top: 4em;
+    margin-top: 0;
     float: right;
-    width: 25em;
+    width: 50em;
     filter: grayscale(1);
     opacity: 0.5;
 }
@@ -130,7 +130,7 @@ img:hover{
 .imgcontent{
     margin-top: 0px;
     float: left;
-    width: 25em;
+    width: 50em;
     filter: grayscale(1);
     opacity: 1;
 }
