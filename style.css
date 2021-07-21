@@ -114,7 +114,7 @@ main{
 img{
     margin-top: 80px;
     margin-left: 175px;
-    width: 750px;
+    width: 50%;
     filter: grayscale(1);
     opacity: 0.5;
 }
