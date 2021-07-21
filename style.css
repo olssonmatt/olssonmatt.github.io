@@ -48,6 +48,7 @@ title{
 }
 .navbar ul li a{
     display: block;
+    float: right;
     text-align: center;
     min-width: 120px;
     padding: 0 30px;
@@ -113,7 +114,7 @@ main{
     background: #90CAF9;
 }
 img{
-    margin-top: 10%;
+    margin-top: 80px;
     float: right;
     width: 70%;
     filter: grayscale(1);
