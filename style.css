@@ -11,10 +11,10 @@ title{
 .navbar{
     background-color: #F5F5F5;
     color:black;
-    border-bottom:0.5px dotted black;
+    border-bottom: 0.5px dotted black;
     width: 100%;
     line-height: 80px;
-    height: 80px;
+    height: 10%;
     font-size: 18px;
     padding: 0 30px;
     position: absolute;
@@ -49,7 +49,7 @@ title{
 .navbar ul li a{
     display: block;
     text-align: center;
-    min-width: 120px;
+    min-width: 7.5%;
     padding: 0 30px;
 }
 .navbar ul li a:hover{
@@ -63,21 +63,21 @@ body{
     background-color: #F5F5F5;
     color: black;
     margin-top: 30%;
-    margin-left: 100px;
+    margin-left: 15%;
 }
 .project{
     font-family: 'Ubuntu', sans-serif;
     background-color: #F5F5F5;
     color: black;
     margin-top: 20%;
-    margin-left: 100px;
+    margin-left: 15%;
 }
 .projecttwo{
     font-family: 'Ubuntu', sans-serif;
     background-color: #F5F5F5;
     color: black;
     margin-top: 30%;
-    margin-left: 100px;
+    margin-left: 15%;
 }
 h1{
     font-size: 70px;
@@ -114,7 +114,7 @@ main{
 img{
     margin-top: 80px;
     margin-left: 175px;
-    width: 50%;
+    width: 75%;
     filter: grayscale(1);
     opacity: 0.5;
 }
@@ -127,7 +127,7 @@ img:hover{
 .imgcontent{
     margin-top: 0px;
     margin-left: 0px;
-    width: 600px;
+    width: 50%;
     filter: grayscale(1);
     opacity: 1;
 }
