@@ -17,7 +17,7 @@ title{
     line-height: 4em;
     height: 4em;
     font-size: 1em;
-    padding: 0 0.5em;
+    padding: 0 2em;
     position: static;
     top: 0;
     left: 0;
@@ -64,37 +64,37 @@ body{
     font-family: 'Ubuntu', sans-serif;
     background-color: #F5F5F5;
     color: black;
-    margin-top: 25%;
-    margin-left: 10%;
+    margin-top: 15em;
+    margin-left: 10em;
 }
 .project{
     font-family: 'Ubuntu', sans-serif;
     background-color: #F5F5F5;
     color: black;
-    margin-top: 15%;
-    margin-left: 10%;
+    margin-top: 10em;
+    margin-left: 10em;
 }
 .projecttwo{
     font-family: 'Ubuntu', sans-serif;
     background-color: #F5F5F5;
     color: black;
-    margin-top: 15%;
-    margin-left: 10%;
+    margin-top: 10em;
+    margin-left: 10em;
 }
 h1{
-    font-size: xx-large;
+    font-size: 4em;
     color: black;
     font-weight: bold;
 }
 h2{
-    font-size: medium;
+    font-size: 2em;
     color: black;
 }
 p{
     margin-top:5%;
     background-color: #F5F5F5;
     font-family: 'Ubuntu', sans-serif;
-    font-size: small;
+    font-size: 1em;
 }
 main{
     display: grid;
@@ -106,18 +106,18 @@ main{
     background: #E0E0E0;
     cursor: pointer;
     color: black;
-    padding: 5px 20px;
+    padding: 0.2em 0.5em;
     float: center;
     border: 0;
-    border-radius: 5px;
+    border-radius: 0.2em;
 }
 .btns:hover{
     background: #90CAF9;
 }
 img{
-    margin-top: 60px;
+    margin-top: 4em;
     float: right;
-    width: 70%;
+    width: 25em;
     filter: grayscale(1);
     opacity: 0.5;
 }
@@ -130,7 +130,7 @@ img:hover{
 .imgcontent{
     margin-top: 0px;
     float: left;
-    width: 70%;
+    width: 25em;
     filter: grayscale(1);
     opacity: 1;
 }
@@ -140,12 +140,12 @@ img:hover{
     cursor: pointer;
 }
 .footer{
-    margin-top: 5%;
+    margin-top: 1em;
     float: right;
     height: inherit;
     line-height: inherit;
-    padding: 0 10%;
-    font-size: xx-small;
+    padding: 0 1em;
+    font-size: 0.5em;
     font-family: 'Ubuntu', sans-serif;
     color: black;
 }
