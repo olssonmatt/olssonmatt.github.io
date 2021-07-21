@@ -50,7 +50,7 @@ title{
 .navbar ul li a{
     display: block;
     text-align: center;
-    min-width: 6em;
+    min-width: 8em;
     padding: 0 0.5em;
 }
 .navbar ul li a:hover{
