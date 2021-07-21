@@ -14,8 +14,8 @@ title{
     color:black;
     border-bottom: 0.5px dotted black;
     width: 100%;
-    line-height: 80px;
-    height: 80px;
+    line-height: 60px;
+    height: 60px;
     font-size: medium;
     padding: 0 30px;
     position: absolute;
@@ -105,8 +105,8 @@ main{
     background: #E0E0E0;
     cursor: pointer;
     color: black;
-    padding: 10px 20px;
-    float: left;
+    padding: 5px 20px;
+    float: center;
     border: 0;
     border-radius: 5px;
 }
