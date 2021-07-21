@@ -117,7 +117,7 @@ main{
 img{
     margin-top: 0;
     float: right;
-    width: 50em;
+    width: 40em;
     filter: grayscale(1);
     opacity: 0.5;
 }
@@ -130,7 +130,7 @@ img:hover{
 .imgcontent{
     margin-top: 0px;
     float: left;
-    width: 50em;
+    width: 40em;
     filter: grayscale(1);
     opacity: 1;
 }
@@ -145,7 +145,7 @@ img:hover{
     height: inherit;
     line-height: inherit;
     padding: 0 1em;
-    font-size: 0.5em;
+    font-size: 1em;
     font-family: 'Ubuntu', sans-serif;
     color: black;
 }
