@@ -37,7 +37,6 @@ title{
     color: black;
 }
 .navbar ul{
-    float: right;
     list-style: none;
     height: inherit;
     line-height: inherit;
@@ -45,7 +44,6 @@ title{
 }
 .navbar ul li{
     display: inline-block;
-    float: right;
 }
 .navbar ul li a{
     display: block;
