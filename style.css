@@ -12,10 +12,10 @@ title{
     display: block;
     background-color: #F5F5F5;
     color:black;
-    border-bottom: 1px dotted black;
+    border-bottom: 0.1em dotted black;
     width: 100%;
-    /*line-height: 2em;*/
-    height: 2em;
+    line-height: 1em;
+    height: 4em;
     font-size: medium;
     padding: 0 1em;
     position: absolute;
@@ -33,7 +33,7 @@ title{
     line-height: inherit;
     padding: 0 1em;
     font-size: large;
-    letter-spacing: 0.5em;
+    letter-spacing: 0.25em;
     font-family: 'Ubuntu', sans-serif;
     color: black;
 }
@@ -41,7 +41,7 @@ title{
     list-style: none;
     height: inherit;
     line-height: inherit;
-    padding: 0 30px;
+    padding: 0 1em;
     float: right;
 }
 .navbar ul li{
@@ -50,8 +50,8 @@ title{
 .navbar ul li a{
     display: block;
     text-align: center;
-    min-width: 120px;
-    padding: 0 30px;
+    min-width: 4em;
+    padding: 0 1em;
 }
 .navbar ul li a:hover{
     background-color: #90CAF9;
