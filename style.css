@@ -16,7 +16,7 @@ title{
     line-height: 10%;
     height: 10%;
     font-size: medium;
-    padding: 0 10%;
+    padding: 0 30px;
     position: absolute;
     top: 0;
     left: 0;
@@ -30,9 +30,9 @@ title{
     float: left;
     height: inherit;
     line-height: inherit;
-    padding: 0 10%;
+    padding: 0 30px;
     font-size: large;
-    letter-spacing: 1%;
+    letter-spacing: 2px;
     font-family: 'Ubuntu', sans-serif;
     color: black;
 }
@@ -49,8 +49,8 @@ title{
 .navbar ul li a{
     display: block;
     text-align: center;
-    min-width: 5%;
-    padding: 0 10%;
+    min-width: 120px;
+    padding: 0 30px;
 }
 .navbar ul li a:hover{
     background-color: #90CAF9;
@@ -104,10 +104,10 @@ main{
     background: #E0E0E0;
     cursor: pointer;
     color: black;
-    padding: 5% 10%;
+    padding: 10px 20px;
     float: left;
     border: 0;
-    border-radius: 5%;
+    border-radius: 10px;
 }
 .btns:hover{
     background: #90CAF9;
