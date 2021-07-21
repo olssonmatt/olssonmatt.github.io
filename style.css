@@ -14,7 +14,7 @@ title{
     color:black;
     border-bottom: 0.1em dotted black;
     width: 100%;
-    line-height: 1em;
+    line-height: 4em;
     height: 4em;
     font-size: 1em;
     padding: 0 0.5em;
@@ -36,7 +36,6 @@ title{
     letter-spacing: 0.1em;
     font-family: 'Ubuntu', sans-serif;
     color: black;
-    vertical-align: middle;
 }
 .navbar ul{
     list-style: none;
@@ -53,7 +52,6 @@ title{
     text-align: center;
     min-width: 6em;
     padding: 0 0.5em;
-    vertical-align: middle;
 }
 .navbar ul li a:hover{
     background-color: #90CAF9;
