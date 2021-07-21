@@ -31,7 +31,7 @@ title{
     height: inherit;
     line-height: inherit;
     padding: 0 30px;
-    font-size: medium;
+    font-size: large;
     letter-spacing: 2px;
     font-family: 'Ubuntu', sans-serif;
     color: black;
@@ -80,7 +80,7 @@ body{
     margin-left: 15%;
 }
 h1{
-    font-size: x-large;
+    font-size: xx-large;
     color: black;
 }
 h2{
@@ -91,6 +91,7 @@ p{
     margin-top:5%;
     background-color: #F5F5F5;
     font-family: 'Ubuntu', sans-serif;
+    font-size: small;
 }
 main{
     display: grid;
@@ -114,7 +115,7 @@ main{
 img{
     margin-top: 80px;
     float: right;
-    width: 60%;
+    width: 70%;
     filter: grayscale(1);
     opacity: 0.5;
 }
@@ -142,7 +143,7 @@ img:hover{
     height: inherit;
     line-height: inherit;
     padding: 0 30px;
-    font-size: small;
+    font-size: xx-small;
     font-family: 'Ubuntu', sans-serif;
     color: black;
 }
