@@ -45,10 +45,10 @@ title{
 }
 .navbar ul li{
     display: inline-block;
+    float: right;
 }
 .navbar ul li a{
     display: block;
-    float: right;
     text-align: center;
     min-width: 120px;
     padding: 0 30px;
