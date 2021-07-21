@@ -18,7 +18,7 @@ title{
     height: 4em;
     font-size: medium;
     padding: 0 1em;
-    position: absolute;
+    position: static;
     top: 0;
     left: 0;
     font-family: 'Ubuntu', sans-serif;
