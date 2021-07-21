@@ -17,7 +17,7 @@ title{
     line-height: 1em;
     height: 4em;
     font-size: medium;
-    padding: 0 1em;
+    padding: 0 0.5em;
     position: static;
     top: 0;
     left: 0;
@@ -31,7 +31,7 @@ title{
     float: left;
     height: inherit;
     line-height: inherit;
-    padding: 0 1em;
+    padding: 0 0.5em;
     font-size: large;
     letter-spacing: 0.1em;
     font-family: 'Ubuntu', sans-serif;
@@ -42,7 +42,7 @@ title{
     list-style: none;
     height: inherit;
     line-height: inherit;
-    padding: 0 1em;
+    padding: 0 0.5em;
     float: right;
 }
 .navbar ul li{
@@ -52,7 +52,7 @@ title{
     display: block;
     text-align: center;
     min-width: 6em;
-    padding: 0 1em;
+    padding: 0 0.5em;
     vertical-align: middle;
 }
 .navbar ul li a:hover{
