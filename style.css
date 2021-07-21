@@ -14,10 +14,10 @@ title{
     color:black;
     border-bottom: 1px dotted black;
     width: 100%;
-    line-height: 60px;
-    height: 60px;
+    /*line-height: 2em;*/
+    height: 2em;
     font-size: medium;
-    padding: 0 30px;
+    padding: 0 1em;
     position: absolute;
     top: 0;
     left: 0;
@@ -31,9 +31,9 @@ title{
     float: left;
     height: inherit;
     line-height: inherit;
-    padding: 0 30px;
+    padding: 0 1em;
     font-size: large;
-    letter-spacing: 2px;
+    letter-spacing: 0.5em;
     font-family: 'Ubuntu', sans-serif;
     color: black;
 }
