@@ -125,7 +125,7 @@ main{
 img{
     margin-top: 0;
     float: right;
-    width: 25%;
+    width: 35%;
     filter: grayscale(1);
     opacity: 0.5;
 }
