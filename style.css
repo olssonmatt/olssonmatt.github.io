@@ -106,6 +106,7 @@ p{
 main{
     display: grid;
     grid-template-columns: 65% 35%;
+    grid-column-gap: 2em;
     background-color: #F5F5F5;
 }
 .btns{
@@ -166,7 +167,7 @@ dl{
     margin-left: 0em;
 }
 dt{
-    margin-left: 0em;
+    margin-left: 1.5em;
     margin-top: 0.5em;
 }    
 dt::before{
@@ -174,7 +175,7 @@ dt::before{
 }
 
 dd{
-    margin-left: 2em;
+    margin-left: 3em;
 }
 dd::before{
     content: "-     ";
