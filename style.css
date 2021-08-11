@@ -138,7 +138,6 @@ img:hover{
 .imgcontent{
     margin-top: 0px;
     float: left;
-    width: 25%;
     filter: grayscale(1);
     opacity: 1;
 }
