@@ -105,8 +105,8 @@ p{
 }
 main{
     display: grid;
-    grid-template-columns: 65% 35%;
-    grid-column-gap: 2em;
+    grid-template-columns: 60% 35%;
+    grid-column-gap: 5%;
     background-color: #F5F5F5;
 }
 .btns{
