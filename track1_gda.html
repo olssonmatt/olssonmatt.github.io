@@ -14581,15 +14581,59 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h1 id="wellness-tech">wellness tech<a class="anchor-link" href="#wellness-tech">&#182;</a></h1><hr>
 <h4 id="home-/-portfolio-/-contact"><a href="https://olssonmatt.github.io/index.html">home</a> / <a href="https://olssonmatt.github.io/portfolio.html">portfolio</a> / <a href="https://olssonmatt.github.io/contact.html">contact</a><a class="anchor-link" href="#home-/-portfolio-/-contact">&#182;</a></h4><hr>
-<h2 id="How-Can-a-Wellness-Technology-Company-Play-it-Smart?-(15/03/2022)">How Can a Wellness Technology Company Play it Smart? (<em>15/03/2022</em>)<a class="anchor-link" href="#How-Can-a-Wellness-Technology-Company-Play-it-Smart?-(15/03/2022)">&#182;</a></h2><p>This project was done to satisfy the requirements of completing the Google Data Analytics certificate. This track aims to simulate myself being a junior data analyst on the marketing team of Bellabeat, a tech manufacturer of health products for women. My goal for the project here is to see how the consumer is using their smart device, gain insight into these findings, and present them to the executive team along with recommendations.</p>
+<h2 id="How-can-a-wellness-technology-company-play-it-smart?-(15/03/2022)">How can a wellness technology company play it smart? (<em>15/03/2022</em>)<a class="anchor-link" href="#How-can-a-wellness-technology-company-play-it-smart?-(15/03/2022)">&#182;</a></h2><p>This project was done to satisfy the requirements of completing the Google Data Analytics certificate [1]. This track aims to simulate myself being a junior data analyst on the marketing team of Bellabeat, a tech manufacturer of health products for women. My goal for the project here is to see how the consumer is using their smart device, gain insight into these findings, and present them to the executive team along with recommendations.</p>
 <p>For more information on the project, follow this link <a href="https://olssonmatt.github.io/docs/track1.pdf">here</a>.</p>
 <hr>
-<h2 id="Business-Task">Business Task<a class="anchor-link" href="#Business-Task">&#182;</a></h2><p>This project seeks to analyze the data of smart devices used by consumers who do not use Bellabeat products. Trends in the data should be identified and utilized. The utilization of this data will be in how it can be applied to the consumer data of Bellabeat, and how the trends can influence the decisions of the marketing team. The conclusion of the report will end up with recommendations for future decisions that are based on the analysis conducted.</p>
+<h2 id="Business-Task">Business Task<a class="anchor-link" href="#Business-Task">&#182;</a></h2><p>This project seeks to analyze the data of smart devices used by consumers who do not use Bellabeat products. Trends in the data should be identified and utilized. The utilization of this data will be in how it can be applied to the consumer data of Bellabeat, and how the trends can influence the decisions of the marketing team, and cofounders. This report will end with data based recommendations from myself. This report will also focus on the Bellabeat app specifically.</p>
 <hr>
-<h2 id="Data-Source">Data Source<a class="anchor-link" href="#Data-Source">&#182;</a></h2>
+<h2 id="Data-Source">Data Source<a class="anchor-link" href="#Data-Source">&#182;</a></h2><p>The data that is being used a public,crowd-sourced data set in which 33 Fitbit users submitted their data [2]. The data contains information such as step count, heartrate, sleep patterns about those users. The data is stored in .csv files and stored in a wide format. Those files were input into <em>LibreOffice Base</em> to make a database and verify the data.  An exerpt of the following commands were run to do so.</p>
+<p><code>SELECT DISTINCT(COUNT("Id")) FROM "tbl_dailyActivity"</code> <em>33 records</em></p>
+<p><code>SELECT DISTINCT(COUNT("Id")) FROM "tbl_dailysleep"</code> <em>24 records</em></p>
+<p><code>SELECT * FROM "tbl_dailycalories" WHERE "tbl_dailycalories"."Calories" = 0</code> <em>4 records containing zeros</em></p>
+<h3 id="Notes-on-the-data">Notes on the data<a class="anchor-link" href="#Notes-on-the-data">&#182;</a></h3><ul>
+<li>The data is only taken across a month, this is a relatively short period of time and many factors could impact the activity<ul>
+<li>Geographical location, season, etc.</li>
+</ul>
+</li>
+<li>The data for the sleep table has only 24 out of the 33 participants</li>
+<li>A portion of the data has inactive records, visible by the zero calories recorded and 0 steps completed</li>
+<li>Although these are valid concerns, they are small and <ul>
+<li>Since this a project to mainly put on the portfolio if the data was significant or not, it would've been acted on</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="Processing">Processing<a class="anchor-link" href="#Processing">&#182;</a></h2><hr>
+<h2 id="Analysis">Analysis<a class="anchor-link" href="#Analysis">&#182;</a></h2><hr>
+<h2 id="Visuals">Visuals<a class="anchor-link" href="#Visuals">&#182;</a></h2><hr>
+<h2 id="Act">Act<a class="anchor-link" href="#Act">&#182;</a></h2><hr>
+<h2 id="Bibliography">Bibliography<a class="anchor-link" href="#Bibliography">&#182;</a></h2><ol>
+<li><p>“Google Data Analytics.” Coursera, <a href="https://www.coursera.org/professional-certificates/google-data-analytics">https://www.coursera.org/professional-certificates/google-data-analytics</a>.</p>
+</li>
+<li><p>Furberg, R., Brinton, J., Keating, M., &amp; Ortiz, A. (2016). Crowd-sourced Fitbit datasets 03.12.2016-05.12.2016 [Data set]. Zenodo. <a href="https://doi.org/10.5281/zenodo.53894">https://doi.org/10.5281/zenodo.53894</a></p>
+</li>
+<li></li>
+</ol>
+
 </div>
 </div>
 </div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
