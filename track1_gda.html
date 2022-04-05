@@ -14584,9 +14584,9 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <h2 id="How-can-a-wellness-technology-company-play-it-smart?-(15/03/2022)">How can a wellness technology company play it smart? (<em>15/03/2022</em>)<a class="anchor-link" href="#How-can-a-wellness-technology-company-play-it-smart?-(15/03/2022)">&#182;</a></h2><p>This project was done to satisfy the requirements of completing the Google Data Analytics certificate [1]. This track aims to simulate myself being a junior data analyst on the marketing team of Bellabeat, a tech manufacturer of health products for women. My goal for the project here is to see how the consumer is using their smart device, gain insight into these findings, and present them to the executive team along with recommendations.</p>
 <p>For more information on the project, follow this link <a href="https://olssonmatt.github.io/docs/track1.pdf">here</a>.</p>
 <hr>
-<h2 id="Business-Task">Business Task<a class="anchor-link" href="#Business-Task">&#182;</a></h2><p>This project seeks to analyze the data of smart devices used by consumers who do not use Bellabeat products. Trends in the data should be identified and utilized. The utilization of this data will be in how it can be applied to the consumer data of Bellabeat, and how the trends can influence the decisions of the marketing team, and cofounders. This report will end with data based recommendations from myself. This report will also focus on the Bellabeat app specifically.</p>
+<h2 id="Business-Task">Business Task<a class="anchor-link" href="#Business-Task">&#182;</a></h2><p>This project seeks to analyze the data of smart devices used by consumers who do not use Bellabeat products. Trends in the data should be identified and utilized. The utilization of this data will be in how it can be applied to the consumer data of Bellabeat, and how the trends can influence the decisions of the marketing team, and cofounders. This report will end with data based recommendations from myself. This report will also focus on increasing the Bellabeat app usage specifically.</p>
 <hr>
-<h2 id="Data-Source">Data Source<a class="anchor-link" href="#Data-Source">&#182;</a></h2><p>The data that is being used a public,crowd-sourced data set in which 33 Fitbit users submitted their data [2]. The data contains information such as step count, heartrate, sleep patterns about those users. The data is stored in .csv files and stored in a wide format. Those files were input into <em>LibreOffice Base</em> to make a database and verify the data.  An exerpt of the following commands were run to do so.</p>
+<h2 id="Data-Source">Data Source<a class="anchor-link" href="#Data-Source">&#182;</a></h2><p>The data that is being used a public, crowd-sourced data set in which 33 Fitbit users submitted their data [2]. The data contains information such as step count, heartrate, sleep patterns about those users. The data is stored in .csv files and stored in a wide format. Those files were input into <em>LibreOffice Base</em> to make a database and verify the data.  An exerpt of the following commands were run to do so.</p>
 <p><code>SELECT DISTINCT(COUNT("Id")) FROM "tbl_dailyActivity"</code> <em>33 records</em></p>
 <p><code>SELECT DISTINCT(COUNT("Id")) FROM "tbl_dailysleep"</code> <em>24 records</em></p>
 <p><code>SELECT * FROM "tbl_dailycalories" WHERE "tbl_dailycalories"."Calories" = 0</code> <em>4 records containing zeros</em></p>
@@ -14597,14 +14597,21 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </li>
 <li>The data for the sleep table has only 24 out of the 33 participants</li>
 <li>A portion of the data has inactive records, visible by the zero calories recorded and 0 steps completed</li>
-<li>Although these are valid concerns, they are small and <ul>
+<li>Although these are valid concerns, they are small and will be used regardless<ul>
 <li>Since this a project to mainly put on the portfolio if the data was significant or not, it would've been acted on</li>
 </ul>
 </li>
 </ul>
 <hr>
 <h2 id="Processing">Processing<a class="anchor-link" href="#Processing">&#182;</a></h2><hr>
-<h2 id="Analysis">Analysis<a class="anchor-link" href="#Analysis">&#182;</a></h2><hr>
+<h2 id="Analysis">Analysis<a class="anchor-link" href="#Analysis">&#182;</a></h2><p>To optimize the data, it will be broken down in averages spanning a weeks time. The data will be grouped by the day (Sunday, Monday, etc.) and averaged to see where we can increase our app usage/incentivize users to engage. To help with this process, the set was put in Python where the following packages were imported; pandas, numpy, matplotlib, and os. The data was then read in from the .csv file, to which it could then be acted on.</p>
+<div class="highlight"><pre><span></span><span class="n">df_sleep</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;./fitbase_data/daily/sleepDay_merged.csv&quot;</span><span class="p">,</span><span class="n">delimiter</span><span class="o">=</span><span class="s2">&quot;,&quot;</span><span class="p">)</span>
+<span class="n">df_sleep</span><span class="p">[</span><span class="s1">&#39;SleepDayFormatted&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">df_sleep</span><span class="p">[</span><span class="s1">&#39;SleepDay&#39;</span><span class="p">])</span>
+<span class="n">df_sleep</span><span class="p">[</span><span class="s1">&#39;DayOfWeek&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_sleep</span><span class="p">[</span><span class="s1">&#39;SleepDayFormatted&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">dt</span><span class="o">.</span><span class="n">day_name</span><span class="p">()</span>
+<span class="n">grouped_sleep</span> <span class="o">=</span> <span class="n">df_sleep</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;DayOfWeek&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">grouped_sleep</span><span class="p">)</span>
+</pre></div>
+<hr>
 <h2 id="Visuals">Visuals<a class="anchor-link" href="#Visuals">&#182;</a></h2><hr>
 <h2 id="Act">Act<a class="anchor-link" href="#Act">&#182;</a></h2><hr>
 <h2 id="Bibliography">Bibliography<a class="anchor-link" href="#Bibliography">&#182;</a></h2><ol>
