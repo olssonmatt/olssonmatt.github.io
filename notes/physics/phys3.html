@@ -3,7 +3,7 @@
 <head><meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>index</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>phys3</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 
 
 
@@ -13971,13 +13971,607 @@ a.anchor-link {
 
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="matthew-olsson's-website">matthew olsson's website<a class="anchor-link" href="#matthew-olsson's-website">&#182;</a></h1><hr>
+<h1 id="intro-physics-3-notes">intro physics 3 notes<a class="anchor-link" href="#intro-physics-3-notes">&#182;</a></h1><hr>
 <h3 id="home-/-portfolio--/-notes--/-contact"><strong><a href="https://olssonmatt.github.io/">home</a></strong> / <strong><a href="https://olssonmatt.github.io/portfolio.html">portfolio</a></strong>  / <strong><a href="https://olssonmatt.github.io/notes.html">notes</a></strong>  / <strong><a href="https://olssonmatt.github.io/contact.html">contact</a></strong><a class="anchor-link" href="#home-/-portfolio--/-notes--/-contact">&#182;</a></h3><hr>
-<p>Currently working as a late stage credit risk analyst/strategist at Canadian Tire Bank. <br>
-Looking to get into AI and machine learning to have a set of tools to help me tackle a variety of problems. <br>
-My current interests lie in nuclear &amp; medical physics, linear algebra, cryptography, and recently enjoying neuroscience.</p>
-<p>Visit my portfolio to see some projects I have worked on or am currently working on.</p>
-<p><a href="https://olssonmatt.github.io/docs/matthew_olsson_resume.pdf">Resume</a></p>
+<ul>
+<li>elasticity: stress and strain</li>
+<li>energy</li>
+<li>fluid statics</li>
+<li>fluid dynamics</li>
+<li>temperature, kinetic theory, and gas laws</li>
+<li>heat, and heat transfer methods</li>
+<li>thermodynamics</li>
+<li>oscillatory motion and waves</li>
+<li>physics of hearing</li>
+<li>geometric optics, vision, and optical instruments</li>
+<li>wave optics</li>
+</ul>
+<hr>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<hr>
+<h1 id="elasticity:-stress-and-strain">elasticity: stress and strain<a class="anchor-link" href="#elasticity:-stress-and-strain">&#182;</a></h1><h3 id="stretching,-compressing,-and-Young%E2%80%99s-modulus">stretching, compressing, and Young&#8217;s modulus<a class="anchor-link" href="#stretching,-compressing,-and-Young%E2%80%99s-modulus">&#182;</a></h3><ul>
+<li>When an object under goes some change in shape by a force, this is known as deformation</li>
+<li>A change in length, $\Delta L_0$, is made when a force is applied parallel to its length, $L_0$, either stretching it or compressing it</li>
+<li>$F = \frac{Y\Delta LA}{L}$, where $Y$ is the young’s modulus ($\frac{N}{m^2}$), $\Delta L$ is the length stretched, $L$ is the original length, and $A$ is the surface area</li>
+<li>The surface area is the area in which the force is distributed on</li>
+</ul>
+<h3 id="shear-deformation-and-the-shear-modulus">shear deformation and the shear modulus<a class="anchor-link" href="#shear-deformation-and-the-shear-modulus">&#182;</a></h3><ul>
+<li>When there is a deformation, $\Delta x$, and it is perpendicular to, $L_0$, there is a sideways stress or shear force</li>
+<li>$F = \frac{S\Delta xA}{L}$, where $S$ is the shear modulus, $\Delta x$ is the change length</li>
+</ul>
+<h3 id="volume-deformation-and-the-bulk-modulus">volume deformation and the bulk modulus<a class="anchor-link" href="#volume-deformation-and-the-bulk-modulus">&#182;</a></h3><ul>
+<li>When there is a change in volume or a deformation in the volume, there is compression in all directions equally</li>
+<li>To compress an object at the molecular level you need to force the molecules closer together</li>
+<li>$F = \frac{B\Delta VA}{V}$, where $B$ is the bulk modulus, $\Delta V$ is the change in volume, and $V$ is the original volume</li>
+</ul>
+<h3 id="general">general<a class="anchor-link" href="#general">&#182;</a></h3><ul>
+<li>In general, $\frac{F}{A}$ is called the stress of an object and $\frac{\Delta V}{V}$, $\frac{\Delta L}{L}$, $\frac{\Delta x}{L}$ are the strains</li>
+<li>Stress $= \frac{N}{m^2}$, strain = unitless , moduli = $\frac{N}{m^2}$</li>
+<li>$1 \frac{N}{m^2} = 1 Pa$</li>
+<li>| Strain | Moduli | = Stress |
+| --- | --- | --- |
+| $\frac{\Delta L}{L}$ | $Y$ | $=\frac{F}{A}$ |
+| $\frac{\Delta x}{L}$ | $S$ | $=\frac{F}{A}$ |
+| $\frac{\Delta V}{V}$ | $B$ | $=\frac{F}{A}$ |</li>
+</ul>
+<hr>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<hr>
+<h1 id="energy">energy<a class="anchor-link" href="#energy">&#182;</a></h1><h3 id="work-and-energy">work and energy<a class="anchor-link" href="#work-and-energy">&#182;</a></h3><ul>
+<li>One Dimensional Work: $W = Fd\cos\theta$ ($J$)</li>
+<li>Kinetic Energy: $KE = \frac{mv^2}{2}$</li>
+<li>Gravitational Potential Energy: $U = mgh$</li>
+<li>Spring Potential Energy: $U = \frac{kx^2}{2}$ </li>
+<li>Conservation of Energy: $KE_1 + U_1 = KE_2 + U_2$ </li>
+<li>Non-Conservative Work: $W_{nc} + W_c = \Delta KE$</li>
+<li>Efficiency $= \frac{Work \ Output}{Total \ Energy \ Input} = \frac{W_{out}}{E_{in}}$ </li>
+<li>Power $= \frac{Work}{Time}$ ($\frac{J}{s}$ or Watts)</li>
+</ul>
+<hr>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<hr>
+<h1 id="fluid-statics">fluid statics<a class="anchor-link" href="#fluid-statics">&#182;</a></h1><h3 id="what-is-fluid?">what is fluid?<a class="anchor-link" href="#what-is-fluid?">&#182;</a></h3><ul>
+<li>Most common states of matter are solid, liquid, and gas</li>
+<li>Solids – have a definite shape, specific volume</li>
+<li>Liquids – have definite volume, changing shape</li>
+<li>Gas – have neither a definite volume, or shape</li>
+</ul>
+<h3 id="density">density<a class="anchor-link" href="#density">&#182;</a></h3><ul>
+<li>Density is the mass per unit volume </li>
+<li>$\rho = \frac{m}{V}$, where $\rho$ is density, $m$ is mass, and $V$ is volume, and the units for density are $\frac{kg}{m^3}$</li>
+<li>Specific gravity<ul>
+<li>This is the ratio of the object density to the density of water</li>
+<li>$\frac{\rho}{\rho w}$</li>
+</ul>
+</li>
+</ul>
+<h3 id="pressure">pressure<a class="anchor-link" href="#pressure">&#182;</a></h3><ul>
+<li>Pressure is the force divided by the area perpendicular to the force over which it acts</li>
+<li>$P = \frac{F}{A}$, where $P$ is the pressure measured in Pascals or $\frac{N}{m^2}$</li>
+</ul>
+<h3 id="variation-of-pressure-with-depth-in-a-fluid">variation of pressure with depth in a fluid<a class="anchor-link" href="#variation-of-pressure-with-depth-in-a-fluid">&#182;</a></h3><ul>
+<li>Pressure change as depth changes</li>
+<li>$P = \rho hg$, where $\rho$ is the density, $h$ is the depth in the fluid, and $g$ is gravity</li>
+<li>See notebook for derivation</li>
+<li>The standard atmospheric pressure or 1 atm is equal to $P_{atm} = 1.01\times 10^5 Pa$</li>
+</ul>
+<h3 id="Pascal%E2%80%99s-principle">Pascal&#8217;s principle<a class="anchor-link" href="#Pascal%E2%80%99s-principle">&#182;</a></h3><ul>
+<li>When a fluid is enclosed it is easier to analyze the relation of the pressure, forces, and area</li>
+<li>Pascals Principle gives a clear relation</li>
+<li>‘A change in pressure applied to an enclosed fluid is transmitted undiminished to all portions of the fluid and to the walls of its container’</li>
+<li>See notebook for application of the principle in hydraulics</li>
+</ul>
+<h3 id="gauge-pressure,-absolute-pressure,-and-measurement">gauge pressure, absolute pressure, and measurement<a class="anchor-link" href="#gauge-pressure,-absolute-pressure,-and-measurement">&#182;</a></h3><ul>
+<li>Gauge Pressure – this is the pressure relative to atmospheric pressure</li>
+<li>Absolute Pressure – the sum of the gauge pressure and the atmospheric pressure</li>
+<li>$P_{abs} = P_{gp} + P_{atm}$</li>
+<li>Remember, atmospheric pressure is $1.01\times 10^5 Pa$</li>
+<li>And since atmospheric pressure and the formula for pressure is known we see<ul>
+<li>$P_2 = P_1 + \rho gh$</li>
+</ul>
+</li>
+</ul>
+<h3 id="Archimedes-principle">Archimedes principle<a class="anchor-link" href="#Archimedes-principle">&#182;</a></h3><ul>
+<li>Buoyant Force – this force is the net upward force on any object in any fluid</li>
+<li>$F_B = W_{Fluid}  = m_{object}g = \rho Vg$</li>
+<li>See notebook for derivation</li>
+<li>If the object is floating, the buoyant force is equal to the magnitude of its weight</li>
+<li>When an object is submerged, the buoyant force is dependent on the volume, not the weight</li>
+</ul>
+<hr>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<hr>
+<h1 id="fluid-dynamics">fluid dynamics<a class="anchor-link" href="#fluid-dynamics">&#182;</a></h1><h3 id="definitions">definitions<a class="anchor-link" href="#definitions">&#182;</a></h3><ul>
+<li>Steady Flow: the velocity of fluid particles at any point is constant as time passes</li>
+<li>Unsteady Flow: when the velocity changes at any point as time passes</li>
+<li>Fluids can be compressible or incompressible</li>
+<li>Fluids can be viscous or non-viscous</li>
+<li>Ideal fluids are ones that are incompressible and non-viscous</li>
+<li>When the flow is steady, streamlines are used to represent trajectories</li>
+</ul>
+<h3 id="flow-rate-and-its-relation-to-velocity">flow rate and its relation to velocity<a class="anchor-link" href="#flow-rate-and-its-relation-to-velocity">&#182;</a></h3><ul>
+<li>Flow Rate, $Q$, is defined to be the volume of fluid passing by some location through an area during a period of time</li>
+<li>$Q = \frac{V}{t}$, where $V$ is volume, $t$ is time, and the units of $Q$ are $\frac{m^3}{s}$</li>
+<li>If the volume is thought as the area multiplied by the distance, then flow rate can be seen as<ul>
+<li>$Q = Av$</li>
+</ul>
+</li>
+<li>The Equation of Continuity<ul>
+<li>$Q_2 = Q_1$</li>
+<li>$A_2v_2 = A_1v_1$</li>
+</ul>
+</li>
+</ul>
+<h3 id="Bernoulli%E2%80%99s-equation">Bernoulli&#8217;s equation<a class="anchor-link" href="#Bernoulli%E2%80%99s-equation">&#182;</a></h3><ul>
+<li>Fluids accelerate toward lower pressure regions</li>
+<li>According to the pressure-depth relationship, pressure is lower at higher levels and higher at lower levels</li>
+<li>Bernoulli’s Equation<ul>
+<li>$P_1 + \frac{\rho v_1^2}{2} + \rho gh_1 = P_2 + \frac{\rho v_2^2}{2} + \rho gh_2$</li>
+</ul>
+</li>
+<li>See notebook for derivation</li>
+</ul>
+<h3 id="viscosity-and-laminar-flow;-Poiseuille%E2%80%99s-law">viscosity and laminar flow; Poiseuille&#8217;s law<a class="anchor-link" href="#viscosity-and-laminar-flow;-Poiseuille%E2%80%99s-law">&#182;</a></h3><ul>
+<li>The magnitude of the tangential force required to move a fluid layer at a constant speed is given by<ul>
+<li>$F = \frac{\eta\Delta v}{y}$, where $\eta$ is the coefficient of viscosity, $\Delta v$ is the difference in velocity, and $y$ is the distance between the plates</li>
+</ul>
+</li>
+<li>Poiseuille’s Law<ul>
+<li>The volume flow rate rate is given by</li>
+<li>$Q = \frac{\pi r4(P_2 - P_1)}{8\eta L}$, where $r$ is the radius, $\eta$ is the coefficient of viscosity, and $L$ is the length</li>
+</ul>
+</li>
+<li>Reynolds Number<ul>
+<li>Helps find flow patterns</li>
+<li>$Re = \frac{2v\rho r}{\eta}$, where v is the average velocity through the laming</li>
+<li>Reynolds Number is unitless</li>
+<li>Laminar Flow $\rightarrow Re &lt; 2000$</li>
+<li>Turbulent Flow $\rightarrow Re &gt; 4000$</li>
+<li>Anything in between is called transition flow</li>
+</ul>
+</li>
+</ul>
+<hr>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<hr>
+<h1 id="temperature,-kinetic-theory,-and-gas-laws">temperature, kinetic theory, and gas laws<a class="anchor-link" href="#temperature,-kinetic-theory,-and-gas-laws">&#182;</a></h1><h3 id="temperature-scales">temperature scales<a class="anchor-link" href="#temperature-scales">&#182;</a></h3><ul>
+<li>Temperature are commonly reported in degrees Celsius or Fahrenheit (°C or °F)</li>
+<li>Temperature changes are reported in Celsius degrees or Fahrenheit degrees (C° or F°)</li>
+<li>The Kelvin Temperature Scale<ul>
+<li>The kelvin scale is the Celsius scale just readjusted to absolute zero (where $P=0$)</li>
+<li>A one degree temperature change in Celsius is a one degree change in Kelvin</li>
+<li>$T = T_C + 273.15$</li>
+</ul>
+</li>
+<li>Thermometers make use of the change in some physical property with temperature. The physical property that changes is a thermometric property</li>
+</ul>
+<h3 id="linear-thermal-expansion">linear thermal expansion<a class="anchor-link" href="#linear-thermal-expansion">&#182;</a></h3><ul>
+<li>The relationship of the temperature and the change in the length of the object is written as <ul>
+<li>$\Delta L = \alpha L_0\Delta T$, where $\Delta L$ is the change in length, $L$ is the original length, $\alpha$ is the coefficient of linear expansion ($C°^{-1}$), $\Delta T$ is the temperature change in centigrade</li>
+</ul>
+</li>
+</ul>
+<h3 id="volume-thermal-expansion">volume thermal expansion<a class="anchor-link" href="#volume-thermal-expansion">&#182;</a></h3><ul>
+<li>The relationship of the temperature and the change in the volume of the object is<ul>
+<li>$\Delta V = \beta V_0\Delta T$, where $\Delta V$ is the change in volume, $V$ is the original volume, $\beta$ is the coefficient of volume expansion ($C°^{-1}$)</li>
+</ul>
+</li>
+</ul>
+<h3 id="equilibrium-between-phases-of-matter">equilibrium between phases of matter<a class="anchor-link" href="#equilibrium-between-phases-of-matter">&#182;</a></h3><ul>
+<li>The pressure of vapour that coexists in equilibrium with the liquid is called the equilibrium vapor pressure of the liquid</li>
+<li>Only when the temperature and vapour pressure correspond to a point on the curved line do the liquid and vapor phases coexist in equilibrium</li>
+</ul>
+<h3 id="humidity">humidity<a class="anchor-link" href="#humidity">&#182;</a></h3><ul>
+<li>Air is a mixture of various gases</li>
+<li>The total pressure is the sum of partial pressures of the component gases</li>
+<li>The partial pressures of the water vapour depend on weather conditions</li>
+<li>It can be low as 0 or high as the vapor pressure of water at the given temperature (rain)</li>
+<li>Percent Relative to Humidity $= \frac{\partial Pressure \ of \ Water \ Vapour}{Equilibrium \ vapour \ pressure \ of \ water} \times 100$ </li>
+<li>100% relative humidity is called the dew point</li>
+</ul>
+<h3 id="molecular-mass,-the-mole,-and-Avogadro%E2%80%99s-number">molecular mass, the mole, and Avogadro&#8217;s number<a class="anchor-link" href="#molecular-mass,-the-mole,-and-Avogadro%E2%80%99s-number">&#182;</a></h3><ul>
+<li>To compare the mass of atoms, the atomic mass scale was created</li>
+<li>The unit is called atomic mass units (u)</li>
+<li>$1 u = 1.66\times 10^{-27} kg$</li>
+<li>One mole of a substance contains as many particles as there are in 12 grams of the isotope carbon-12</li>
+<li>The number of atoms per mole is Avogadro’s Number ($N_A = 6.022\times 10^{23} mol^{-1}$)</li>
+<li>$n = \frac{N}{N_A}$, where $n$ is the number of moles, $N$ is the number of atoms</li>
+</ul>
+<h3 id="the-ideal-gas-law">the ideal gas law<a class="anchor-link" href="#the-ideal-gas-law">&#182;</a></h3><ul>
+<li>An ideal gas is an idealized model for real gases that have sufficiently low densities</li>
+<li>The condition of low density means that the molecules are so far apart that they do not interact except during collisions which one effectively elastic</li>
+<li>At constant volume, the pressure is inversely proportional to temperature </li>
+<li>At constant temperature, pressure is proportional to volume</li>
+<li>The pressure is also proportional to the amount of gas</li>
+<li>$PV = nRT$, where $P$ is pressure, $V$ is volume, $n$ is the number moles, $R$ is $8.31 \frac{J}{molK}$, $T$ is temperature</li>
+<li>Another variation of this equation is <ul>
+<li>$PV = NkT$, where $N$ is the number of atoms, and $k$ is $1.38\times 10^{-23}$</li>
+</ul>
+</li>
+<li>This allows us to see that<ul>
+<li>$\frac{P_f V_f}{T_f}=\frac{P_i V_i}{T_i}$ </li>
+</ul>
+</li>
+</ul>
+<h3 id="kinetic-theory-of-gases">kinetic theory of gases<a class="anchor-link" href="#kinetic-theory-of-gases">&#182;</a></h3><ul>
+<li>Particles are in constant, random, motion colliding with each other and the walls of the container</li>
+<li>Each collision changes the particles speed, thus the atoms and molecules have different speed</li>
+<li>This gives us a distribution of speeds</li>
+<li>Force on a single molecule $= F = \frac{2mv}{L}$ </li>
+<li>For $N$ molecules average force $= F = \frac{N}{3}\frac{2mv_{rms}}{L}$, where $v_{rms}$ is the root-mean-squared velocity</li>
+<li>$KE = \frac{mv_{rms}^2}{2} = \frac{3kT}{2}$</li>
+<li>Internal Energy of a Monoatomic Ideal Gas<ul>
+<li>$U =\frac{3NkT}{2}= \frac{3nRT}{2}$</li>
+</ul>
+</li>
+</ul>
+<h3 id="diffusion">diffusion<a class="anchor-link" href="#diffusion">&#182;</a></h3><ul>
+<li>The process in which molecules move from a region of higher concentration to one of a lower concentration is called diffusion</li>
+<li>Frick’s Law of Diffusion<ul>
+<li>Mass, $m$, of solute that diffuses in a time, $t$, through a solvent contained in a length, $L$, and cross-sectional area, $A$, is </li>
+<li>$m = \frac{DA\Delta Ct}{L}$, where $D$ is the diffusion constant, $\Delta C$ is the concentration gradient</li>
+</ul>
+</li>
+</ul>
+<hr>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<hr>
+<h1 id="heat-and-heat-transfer-models">heat and heat transfer models<a class="anchor-link" href="#heat-and-heat-transfer-models">&#182;</a></h1><h3 id="heat">heat<a class="anchor-link" href="#heat">&#182;</a></h3><ul>
+<li>Heat is defined as the spontaneous flow of energy due to a temperature difference</li>
+<li>Heat only flows from hot to cold temperature differences</li>
+<li>Heat is energy</li>
+<li>Therefore, the temperature can be changed by doing work</li>
+</ul>
+<h3 id="temperature-and-heat-capacity">temperature and heat capacity<a class="anchor-link" href="#temperature-and-heat-capacity">&#182;</a></h3><ul>
+<li>One of the major effects of heat transfer is temperature change</li>
+<li>Heating (adding energy) increases temperature while cooling (taking out energy) decreases temperature </li>
+<li>Transferred energy depends on 3 factors: change in temperature, mass of the system, and the phases of the substance</li>
+<li>$Q = mc\Delta T$, where $Q$ is the heat energy transfer, and $c$ is the specific heat capacity</li>
+</ul>
+<h3 id="phase-change-and-latent-heat">phase change and latent heat<a class="anchor-link" href="#phase-change-and-latent-heat">&#182;</a></h3><ul>
+<li>During a phase change, the temperature of the mixture does not change (provided it is in thermal equilibrium)</li>
+<li>The energy involved in phase change depends on the number and strength in bond pairs</li>
+<li>The amount of heat required to phase change an object is found by<ul>
+<li>$Q = mL_F$ or $mL_V$ , where $L_f$ is the latent heat of fusion, and $L_V$ is the latent heat of vaporization</li>
+<li>The latent heat of fusion is for melting and freezing</li>
+<li>The latent heat of vaporization is for vaporing and condensing</li>
+</ul>
+</li>
+</ul>
+<h3 id="heat-transfer-methods">heat transfer methods<a class="anchor-link" href="#heat-transfer-methods">&#182;</a></h3><ol>
+<li>Convection: the process in which heat is carried from one place to another by the bulk movement of a fluid. Convection can be forced</li>
+<li>Conduction: the transfer of heat through direct contact. If a substance conducts heat well it is a thermal conductor and if the opposite, then it is a thermal insulator. $Q = \frac{kA\Delta Tt}{L}$</li>
+<li>Radiation: the transfer of heat energy through electromagnetic waves. A material that absorbs all EM waves is a blackbody. $Q = e\sigma T^4At$, $e$ is the emissivity, $\sigma$ is $5.678 x 10^{-8}$</li>
+</ol>
+<hr>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<hr>
+<h1 id="thermodynamics">thermodynamics<a class="anchor-link" href="#thermodynamics">&#182;</a></h1><h3 id="thermodynamics">thermodynamics<a class="anchor-link" href="#thermodynamics">&#182;</a></h3><ul>
+<li>The first law of thermodynamics states that the change in internal energy is equal to the net heat transfer into the system minus the net work done by the system</li>
+<li>$\Delta U = Q – W$</li>
+<li>If $Q$ is positive than there is a net heat transfer into the system</li>
+<li>If $W$ is positive then there is net work done by the system</li>
+<li>So positive $Q$ adds energy while positive $W$ takes energy away and vice versa</li>
+<li>Note, $\Delta U$ is defined as internal energy</li>
+</ul>
+<h3 id="the-first-law-and-simple-processes">the first law and simple processes<a class="anchor-link" href="#the-first-law-and-simple-processes">&#182;</a></h3><ul>
+<li>Using heat transfer as a means to get useful work is called a heat engine</li>
+<li>$W = Q_{in} – Q_{out}$, where $Q_{in}$ is the input heat, $W$ is the useful work done, $Q_{out}$ is the rejected heat</li>
+<li>$PV$ Diagrams and their Relation to Work <ul>
+<li>Isobaric: Pressure is held constant. $W = P\Delta V = P(V_f – V_i)$</li>
+<li>Isochoric: volume is held constant. $\Delta U = Q$ because $W = 0$ </li>
+<li>Isothermal: Temperature is held constant. $PV = nRT$, $W = nRT\ln(\frac{V_f}{V_i})$</li>
+<li>See notebook for their respective graphs</li>
+<li>Adiabatic Process: A process where there is no heat transfer</li>
+<li>Reversible Process: A process where both the system and its environment return to the initial states</li>
+<li>| Name | What is held constant | Work relation |
+| --- | --- | --- |
+| Isobaric | Constant pressure | $W = P\Delta V$ | 
+| Isochoric | Constant volume | $W = 0$ |
+| Isothermal | Constant tempertaure | $Q = W$ |
+| Adiabatic | No heat transfer | $Q = 0$ |</li>
+</ul>
+</li>
+</ul>
+<h3 id="the-second-law-of-thermodynamics-and-efficiency">the second law of thermodynamics and efficiency<a class="anchor-link" href="#the-second-law-of-thermodynamics-and-efficiency">&#182;</a></h3><ul>
+<li>The second law of thermodynamics is the heat transfer when it occurs spontaneously from higher to lower temperature bodies but never in the reverse direction</li>
+<li>The second law can also be described in a different way<ul>
+<li>It is impossible in any system for heat transfer from a reservoir to completely convert to wok in a cyclical process which the system returns to its initial state</li>
+</ul>
+</li>
+<li>Heat Engine Efficiency: $Eff = \frac{W}{Q_H}$ or $1 - \frac{Q_C}{Q_H}$ </li>
+</ul>
+<h3 id="Carnot%E2%80%99s-perfect-heat-engine:-the-second-law-revisited">Carnot&#8217;s perfect heat engine: the second law revisited<a class="anchor-link" href="#Carnot%E2%80%99s-perfect-heat-engine:-the-second-law-revisited">&#182;</a></h3><ul>
+<li>A third form of the second law can be written for reversible processes</li>
+<li>A Carnot engine operating between two given temperatures has the greatest possible efficiency at any engine operating between these two temperatures</li>
+<li>$Eff = 1-\frac{T_c}{T_h}$</li>
+</ul>
+<h3 id="applications-of-thermodynamics:-heat-pumps/refrigerators">applications of thermodynamics: heat pumps/refrigerators<a class="anchor-link" href="#applications-of-thermodynamics:-heat-pumps/refrigerators">&#182;</a></h3><ul>
+<li>Heat Pumps<ul>
+<li>Coefficient of Performance: $COP_{heating} = \frac{|Q_H|}{W} = \frac{Q_C + W}{W} = COP_{cooling} + 1$ </li>
+<li>$|W| = |Q_H| (1 - \frac{T_C}{T_H})$</li>
+</ul>
+</li>
+<li>Refrigeration<ul>
+<li>Coefficient of Performance: $COP_{cooling} = \frac{|Q_C|}{W} = \frac{Q_C}{W}$ </li>
+<li>$|W| = |Q_C| (1 -\frac{T_C}{T_H})$</li>
+</ul>
+</li>
+</ul>
+<h3 id="entropy-and-the-second-law-of-thermodynamics">entropy and the second law of thermodynamics<a class="anchor-link" href="#entropy-and-the-second-law-of-thermodynamics">&#182;</a></h3><ul>
+<li>When analyzing the Carnot engine, we observed that the ratio of the hot and cold temperatures is equal to the ratio of the heat energies</li>
+<li>After rearranging you achieve the ratio of heat energy over temperature</li>
+<li>This is the definition of entropy</li>
+<li>$\Delta S = \frac{Q}{T}$</li>
+<li>$\Delta S = \Delta S_H - \Delta S_C$</li>
+<li>$\Delta S = nC\ln(\frac{T_f}{T_i})$</li>
+<li>$S = k\ln(W)$, where $W$ is $\frac{N!}{n_1! n_2!}$ </li>
+</ul>
+<hr>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<hr>
+<h1 id="oscillatory-motion-and-waves">oscillatory motion and waves<a class="anchor-link" href="#oscillatory-motion-and-waves">&#182;</a></h1><h3 id="Hooke%E2%80%99s-haw-revisited">Hooke&#8217;s haw revisited<a class="anchor-link" href="#Hooke%E2%80%99s-haw-revisited">&#182;</a></h3><ul>
+<li>$F = -kx$</li>
+<li>Energy in Hooke’s Law: $U = \frac{kx^2}{2}$</li>
+</ul>
+<h3 id="period-and-frequency-oscillations">period and frequency oscillations<a class="anchor-link" href="#period-and-frequency-oscillations">&#182;</a></h3><ul>
+<li>Period is the amount of time needed to complete one oscillation</li>
+<li>Frequency is the amount of cycles per second</li>
+<li>$f = \frac{1}{T}$</li>
+</ul>
+<h3 id="simple-harmonic-motion">simple harmonic motion<a class="anchor-link" href="#simple-harmonic-motion">&#182;</a></h3><ul>
+<li>SHM allows us to relate the period and frequency to the spring constant and mass of it</li>
+<li>$T = 2\pi\sqrt{\frac{m}{K}}$</li>
+<li>$f = \frac{1}{2\pi}\sqrt{\frac{K}{m}}$</li>
+<li>The position of the SHM can be found here<ul>
+<li>$x = A\cos\theta = A\cos(\omega t)$, where $A$ is the amplitude and $\omega$ is the angular frequency</li>
+</ul>
+</li>
+<li>The velocity can be found in<ul>
+<li>$v = -v\sin\theta = -A\omega\sin(\omega t)$, when $v = -A\omega$, that is max velocity</li>
+</ul>
+</li>
+<li>The acceleration can be found<ul>
+<li>$a = -A\omega^2\cos(\omega t)$</li>
+</ul>
+</li>
+</ul>
+<h3 id="simple-pendulums">simple pendulums<a class="anchor-link" href="#simple-pendulums">&#182;</a></h3><ul>
+<li>We can use the angle approximation in this situation and can see that $\theta = \frac{s}{L}$</li>
+<li>$\omega = \sqrt{\frac{g}{L}}$</li>
+<li>$T = 2\pi \sqrt{\frac{L}{g}}$</li>
+</ul>
+<h3 id="energy-and-the-simple-harmonic-oscillators">energy and the simple harmonic oscillators<a class="anchor-link" href="#energy-and-the-simple-harmonic-oscillators">&#182;</a></h3><ul>
+<li>$E_{Tot} = KE + PE_{elastic}$</li>
+<li>$\frac{mv_1^2}{2} + \frac{kx_1^2}{2} = \frac{mv_2^2}{2} + \frac{kx_2^2}{2}$</li>
+</ul>
+<h3 id="forced-oscillations-and-resonance">forced oscillations and resonance<a class="anchor-link" href="#forced-oscillations-and-resonance">&#182;</a></h3><ul>
+<li>Natural Frequency: the frequency at which a system would oscillate if there were no driving or damping forces</li>
+<li>The phenomenon of driving a system with a frequency equal to its natural frequency</li>
+<li>A system being driven at its natural frequency is said to resonate</li>
+</ul>
+<h3 id="waves">waves<a class="anchor-link" href="#waves">&#182;</a></h3><ul>
+<li>A wave is a disturbance that propagates from the place it was created</li>
+<li>The wave velocity is defined as the speed at which the disturbance moves</li>
+<li>$v_w = \frac{\lambda}{T} = f\lambda$</li>
+<li>Waves can also be transverse or longitudinal</li>
+<li>Transverse waves oscillate in positions perpendicular to the velocity</li>
+<li>Longitudinal waves oscillate parallel to the velocity</li>
+<li>Speed of waves on a string<ul>
+<li>$v = \sqrt{\frac{FL}{m}}$  </li>
+</ul>
+</li>
+</ul>
+<h3 id="superposition-and-interference">superposition and interference<a class="anchor-link" href="#superposition-and-interference">&#182;</a></h3><ul>
+<li>When 2 or more waves interfere, they come together and create a phenomenon called superposition</li>
+<li>When waves line up crest to crest or trough to trough, they create constructive interference</li>
+<li>When waves line up crest to trough or vice versa, they create a pure destructive interference</li>
+<li>When a wave seems to alternate between constructive and destructive interference, they create a standing wave</li>
+<li>When the wavelength of a wave is fixed, the fundamental frequency is $\lambda = 2L$<ul>
+<li>$f = \frac{v}{\lambda} = \frac{v_w}{2L}$</li>
+</ul>
+</li>
+<li>Beat Frequency is the wave resulting from the superposition of the 2 similar frequency waves<ul>
+<li>$f_B = |f_1 – f_2|$</li>
+</ul>
+</li>
+</ul>
+<hr>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<hr>
+<h1 id="physics-of-hearing">physics of hearing<a class="anchor-link" href="#physics-of-hearing">&#182;</a></h1><h3 id="sound">sound<a class="anchor-link" href="#sound">&#182;</a></h3><ul>
+<li>Hearing is the human perception of sound</li>
+<li>The physical phenomenon of sound is known as pressure waves</li>
+<li>The eardrum receives these pressure waves and perceives them as we do</li>
+</ul>
+<h3 id="speed-of-sound,-frequency,-and-wavelength">speed of sound, frequency, and wavelength<a class="anchor-link" href="#speed-of-sound,-frequency,-and-wavelength">&#182;</a></h3><ul>
+<li>Our perception of frequency is known as pitch</li>
+<li>Speed of sound $= v_w = f\lambda$</li>
+<li>The speed of sound varies with medium, in air it is about $331 \frac{m}{s}$</li>
+<li>The temperature also affects the speed of sound<ul>
+<li>$v_w = (331)\sqrt{\frac{T}{273}}$</li>
+</ul>
+</li>
+</ul>
+<h3 id="sound-intensity-and-sound-level">sound intensity and sound level<a class="anchor-link" href="#sound-intensity-and-sound-level">&#182;</a></h3><ul>
+<li>We know intensity is $\frac{Power}{Area}$</li>
+<li>Sound intensity level can be found in the equation $\beta (dB) = 10\log_{10}(\frac{I}{I_0})$</li>
+<li>$I_0$ is the threshold of hearing and equates to $1\times 10^{-12}\frac{W}{m^2}$</li>
+</ul>
+<h3 id="the-doppler-effect">the doppler effect<a class="anchor-link" href="#the-doppler-effect">&#182;</a></h3><ul>
+<li>The Scientific definition of the Doppler effect is an increase or decrease in the frequency of sound/light as the source and observer move toward or away from each other</li>
+<li>Stationary Observer<ul>
+<li>Towards observer: $f_0 = f_S(\frac{1}{1-\frac{v_s}{v}})$</li>
+<li>Away from observer: $f_0 = f_S(\frac{1}{1+\frac{v_s}{v}})$</li>
+</ul>
+</li>
+<li>Moving Observer<ul>
+<li>Towards source: $f_0 = f_S (1 + \frac{v_0}{v})$</li>
+<li>Away from source: $f_0 = f_S (1 - \frac{v_0}{v})$</li>
+</ul>
+</li>
+<li>General Case<ul>
+<li>$f_0 = f_S (\frac{1 \pm \frac{v_s}{v}}{1 \pm \frac{v_0}{v}})$</li>
+</ul>
+</li>
+</ul>
+<h3 id="sound-interference-and-resonance">sound interference and resonance<a class="anchor-link" href="#sound-interference-and-resonance">&#182;</a></h3><ul>
+<li>Interference: a fundamental aspect of waves that observing interference is proof that something is a wave</li>
+<li>Two waves in phase create constructive interference</li>
+<li>Two waves out of phase create destructive interference</li>
+<li>Diffraction: the bending of a wave around an obstacle or the edges of an opening is called diffraction</li>
+<li>Beats: two overlapping waves with slightly different frequencies give rise to the phenomena of beats. </li>
+<li>String fixed at both ends<ul>
+<li>$f_n = n(\frac{v}{2L})$</li>
+</ul>
+</li>
+<li>Tube open at both ends<ul>
+<li>$f_n = n(\frac{v}{2L})$</li>
+</ul>
+</li>
+<li>Tube open at one end<ul>
+<li>$f_n = n(\frac{v}{4L})$</li>
+</ul>
+</li>
+</ul>
+<hr>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<hr>
+<h1 id="geometric-optics,-vision,-and-optical-instruments">geometric optics, vision, and optical instruments<a class="anchor-link" href="#geometric-optics,-vision,-and-optical-instruments">&#182;</a></h1><h3 id="the-ray-aspect-of-light">the ray aspect of light<a class="anchor-link" href="#the-ray-aspect-of-light">&#182;</a></h3><ul>
+<li>A ray is a straight line that originates at some point</li>
+<li>Geometric Optics is the part of optics dealing with the ray aspect of light is called geometric optics</li>
+</ul>
+<h3 id="the-law-of-reflection">the law of reflection<a class="anchor-link" href="#the-law-of-reflection">&#182;</a></h3><ul>
+<li>The law of reflection states that the incident angle is equal to the angle of reflection</li>
+<li>$\theta_i = \theta_R$</li>
+</ul>
+<h3 id="the-law-of-refraction">the law of refraction<a class="anchor-link" href="#the-law-of-refraction">&#182;</a></h3><ul>
+<li>Refraction: the changing of a lights rays direction (loosely called bending) when it asses through variation in matter </li>
+<li>The speed of light $= c \approx 3\times 10^8 \frac{m}{s}$</li>
+<li>The speed of light changes through mediums</li>
+<li>$n = \frac{c}{v}$, where $n$ is the index of refraction, $c$ is the speed of light, and $v$ is the speed of light in the medium</li>
+<li>Law of Refraction (Snell’s Law)<ul>
+<li>$n_1\sin\theta_1 = n_2\sin\theta_2$</li>
+</ul>
+</li>
+</ul>
+<h3 id="total-internal-reflection">total internal reflection<a class="anchor-link" href="#total-internal-reflection">&#182;</a></h3><ul>
+<li>Total internal reflection is when all of the light is reflected from the surface</li>
+<li>This happens at the critical angle</li>
+<li>Critical angle is the incident angle that produces an angle of refraction of 90° </li>
+<li>$\theta_C = \sin^{-1}(\frac{n_2}{n_1})$</li>
+</ul>
+<h3 id="dispersion:-the-rainbow-and-prisms">dispersion: the rainbow and prisms<a class="anchor-link" href="#dispersion:-the-rainbow-and-prisms">&#182;</a></h3><ul>
+<li>Dispersion is the spreading of white light into its full spectrum of wavelengths</li>
+<li>This happens because different wavelengths refract differently than others</li>
+</ul>
+<h3 id="image-formation-by-lenses">image formation by lenses<a class="anchor-link" href="#image-formation-by-lenses">&#182;</a></h3><ul>
+<li>Converging/Convex Lenses<ul>
+<li>This lens is one where the light ways that enter parallel to its axis cross one another at a single point on the opposite side</li>
+</ul>
+</li>
+<li>Focal Point is the point at which light rays cross</li>
+<li>Focal Length is the distance from the centre of the lens to the focal point</li>
+<li>Power of a lens if inversely proportional to the focal length of a lens<ul>
+<li>$D = \frac{1}{f}$ where the units are diopters</li>
+</ul>
+</li>
+<li>Diverging Lens<ul>
+<li>This lens is one where the light rays bend away from the parallel axis</li>
+</ul>
+</li>
+<li>Magnification $= m = \frac{h_i}{h_o} = \frac{-d_i}{d_o}$, where $h_i$ is image height, $h_o$ is object height, $d_i$ is image distace, and $d_o$ is object distance</li>
+<li>$\frac{1}{f} = \frac{1}{d_o} + \frac{1}{d_i}$</li>
+<li>Summary of sign conventions for lenses<ul>
+<li>$f$ is $+$ for a converging lens</li>
+<li>$f$ is $-$ for a diverging lens</li>
+<li>$d_o$ is $+$ if the object is to the left of the lens</li>
+<li>$d_o$ is $-$ if the object is to the right of the lens</li>
+<li>$d_i$ is $+$ if the image is formed to the right of the lens (real image)</li>
+<li>$d_i$ is $-$ if the image is formed to the left of the lens (virtual image)</li>
+<li>$m$ is $+$ for an upright image</li>
+<li>$m$ is $-$ for an inverted image</li>
+</ul>
+</li>
+</ul>
+<hr>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<hr>
+<h1 id="wave-optics">wave optics<a class="anchor-link" href="#wave-optics">&#182;</a></h1><h3 id="linear-superposition">linear superposition<a class="anchor-link" href="#linear-superposition">&#182;</a></h3><ul>
+<li>When 2 or more waves pass through a point, they create a phenomenon called superposition</li>
+<li>2 waves in phase create constructive interference</li>
+<li>2 waves out of phase create destructive interference</li>
+<li>If constructive or destructive interference is continually occurring at a point the sources must be coherent</li>
+</ul>
+<h3 id="Young%E2%80%99s-double-slit-experiment">Young&#8217;s double slit experiment<a class="anchor-link" href="#Young%E2%80%99s-double-slit-experiment">&#182;</a></h3><ul>
+<li>In Young’s experiment, he displayed that light acts like a wave<ul>
+<li>Bright fringe: $\sin\theta = \frac{m\lambda}{d}$</li>
+<li>Dark fringe: $\sin\theta = \frac{(m+\frac{1}{2})\lambda}{d}$ </li>
+</ul>
+</li>
+</ul>
+<h3 id="thin-film-interference">thin film interference<a class="anchor-link" href="#thin-film-interference">&#182;</a></h3><ul>
+<li>Because of reflection and refraction, light waves split up when passing through a thin film</li>
+<li>$\lambda_{film} = \frac{\lambda}{n}$</li>
+</ul>
+<h3 id="diffraction">diffraction<a class="anchor-link" href="#diffraction">&#182;</a></h3><ul>
+<li>Diffraction is the bending of waves around obstacles or an edge of an opening</li>
+<li>Huygens’ Principle<ul>
+<li>Every point on a wave front acts as a source of tiny wavelets that move forward with the same speed as the wave; the wave front at a later instant is the surface that is tangent to the wavelets.</li>
+</ul>
+</li>
+<li>Dark Fringes: $\sin\theta = \frac{m\lambda}{a} $</li>
+<li>Circular Diffraction: $\sin\theta = \frac{1.22\lambda}{D}$ </li>
+<li>Diffraction Grating is where there is an arrangement of closely spaced parallel slits<ul>
+<li>Principle Maxima of Diffraction Grating: $\sin\theta = \frac{m\lambda}{d} $</li>
+</ul>
+</li>
+</ul>
+<hr>
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">

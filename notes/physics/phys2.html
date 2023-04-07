@@ -3,7 +3,7 @@
 <head><meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>index</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>phys2</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 
 
 
@@ -13971,13 +13971,642 @@ a.anchor-link {
 
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="matthew-olsson's-website">matthew olsson's website<a class="anchor-link" href="#matthew-olsson's-website">&#182;</a></h1><hr>
+<h1 id="intro-physics-2-notes">intro physics 2 notes<a class="anchor-link" href="#intro-physics-2-notes">&#182;</a></h1><hr>
 <h3 id="home-/-portfolio--/-notes--/-contact"><strong><a href="https://olssonmatt.github.io/">home</a></strong> / <strong><a href="https://olssonmatt.github.io/portfolio.html">portfolio</a></strong>  / <strong><a href="https://olssonmatt.github.io/notes.html">notes</a></strong>  / <strong><a href="https://olssonmatt.github.io/contact.html">contact</a></strong><a class="anchor-link" href="#home-/-portfolio--/-notes--/-contact">&#182;</a></h3><hr>
-<p>Currently working as a late stage credit risk analyst/strategist at Canadian Tire Bank. <br>
-Looking to get into AI and machine learning to have a set of tools to help me tackle a variety of problems. <br>
-My current interests lie in nuclear &amp; medical physics, linear algebra, cryptography, and recently enjoying neuroscience.</p>
-<p>Visit my portfolio to see some projects I have worked on or am currently working on.</p>
-<p><a href="https://olssonmatt.github.io/docs/matthew_olsson_resume.pdf">Resume</a></p>
+<ul>
+<li>intro physics 1 key ideas</li>
+<li>oscillations and waves</li>
+<li>electrostatics</li>
+<li>electric fields</li>
+<li>electric field lines </li>
+<li>electric potential and electric fields</li>
+<li>electric current, resistance, and Ohm’s law</li>
+<li>circuits and DC instruments </li>
+<li>magnetism</li>
+<li>electromagnetic induction, and AC circuits</li>
+<li>electromagnetic waves</li>
+<li>wave optics</li>
+<li>quantum physics</li>
+<li>atomic physics</li>
+</ul>
+<hr>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<hr>
+<h1 id="intro-physics-1-key-ideas">intro physics 1 key ideas<a class="anchor-link" href="#intro-physics-1-key-ideas">&#182;</a></h1><ul>
+<li>If v is in the direction of acceleration, then it is speeding up</li>
+<li>If v is in the opposite direction of acceleration, then it is slowing down</li>
+<li>Newton’s Second Law <ul>
+<li>$F=ma$</li>
+</ul>
+</li>
+<li>Newton’s First Law<ul>
+<li>$F=0$, when there is no acceleration present</li>
+</ul>
+</li>
+<li>Newtons Third Law<ul>
+<li>Forces come in pairs</li>
+</ul>
+</li>
+<li>Conservation of Mechanical Energy<ul>
+<li>Kinetic Energy $\rightarrow \frac{mv^2}{2}$</li>
+<li>Potential Energy $\rightarrow U$</li>
+<li>Total mechanical energy is conserved when the work done by non-conservative forces is zero</li>
+</ul>
+</li>
+<li>Conservation of Linear Momentum <ul>
+<li>$p=mv$</li>
+<li>Momentum is conserved when the sum of the exterior forces is zero</li>
+</ul>
+</li>
+</ul>
+<hr>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<hr>
+<h1 id="oscillations-and-waves">oscillations and waves<a class="anchor-link" href="#oscillations-and-waves">&#182;</a></h1><h3 id="net-force">net force<a class="anchor-link" href="#net-force">&#182;</a></h3><ul>
+<li>Net force determines an objects trajectory</li>
+<li>| Net Force |  |
+| --- | --- |
+| Constant | Straight line if v is parallel with F, if not then parabola |
+| Centripetal | Circular (has constant magnitude but center facing) |
+| Spring Force | Produces Oscillations |</li>
+</ul>
+<h3 id="spring-force">spring force<a class="anchor-link" href="#spring-force">&#182;</a></h3><ul>
+<li>Refer to Hooke’s Law</li>
+<li>F = -kx, where x is displacement from equilibrium, and k is the spring constant</li>
+<li>Spring forces produces oscillations</li>
+</ul>
+<h3 id="uniform-circular-motion">uniform circular motion<a class="anchor-link" href="#uniform-circular-motion">&#182;</a></h3><ul>
+<li>Position, $\theta = \omega t$, where $\omega$ is angular velocity</li>
+<li>$\omega=2\pi f$, where $f$ is frequency</li>
+<li>Velocity, $v = -A\omega\sin(\omega t)$, $A =$ amplitude</li>
+<li>Acceleration, $a = -A\omega^2\cos(\omega t)$</li>
+<li>Important Relation<ul>
+<li>$m\omega^2 = k$</li>
+</ul>
+</li>
+</ul>
+<h3 id="energy-in-simple-harmonic-oscillators">energy in simple harmonic oscillators<a class="anchor-link" href="#energy-in-simple-harmonic-oscillators">&#182;</a></h3><ul>
+<li>We can’t use $W=Fd\cos\theta$ because it is an oversimplification for work</li>
+<li>Since is the force is constantly changing we cannot accurately define it using that equation</li>
+<li>$U_{Spring} = \frac{kx^2}{2}$</li>
+<li>Note: Never use kinematics in SHO, $a$ is not constant</li>
+</ul>
+<hr>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<hr>
+<h3 id="electrostatics">electrostatics<a class="anchor-link" href="#electrostatics">&#182;</a></h3><h3 id="atoms">atoms<a class="anchor-link" href="#atoms">&#182;</a></h3><ul>
+<li>Made if nucleus, protons, neutrons, and electrons</li>
+<li>Protons and neutrons are in the nucleus</li>
+<li>Atomic number is the number of protons</li>
+<li># of protons $\approx$ # of neutrons</li>
+<li>| Particle | Charge | Mass (kg) |
+| --- | --- | --- |
+| Proton ($p$) | $+e$ | $1.67\times 10^{-27}$ |
+| Electron ($e^-$) | $-e$ | $9.11\times 10^{-31}$ |
+| Neutron ($n$) | $0$ | $m_n \approx m_p$ |</li>
+</ul>
+<h3 id="charge-and-properties-of-charge">charge and properties of charge<a class="anchor-link" href="#charge-and-properties-of-charge">&#182;</a></h3><ul>
+<li>Charge is the state a molecule is in due to its count of $p$ and $e-$</li>
+<li>4 Properties of Charge<ul>
+<li>Charge can either be $+/-$ </li>
+<li>Charge is quantized<ul>
+<li>Elementary Charge $= 1.602\times 10^{-19} C$</li>
+</ul>
+</li>
+<li>Charge is conserved<ul>
+<li>Charges have forces<ul>
+<li>Coloumb Force $=F=\frac{kq_1q_2}{r^2}$</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="nuclear/particle-physics-reactions">nuclear/particle physics reactions<a class="anchor-link" href="#nuclear/particle-physics-reactions">&#182;</a></h3><ul>
+<li>Electron-Positron Annihilation</li>
+<li>Positron is the antiparticle to $e^-$ (same mass but opposite charge)</li>
+<li>The two create a gamma ray photon (particle of light)</li>
+<li>$e^- + e^+ \rightarrow \gamma$</li>
+</ul>
+<h3 id="Coulombs-law">Coulombs law<a class="anchor-link" href="#Coulombs-law">&#182;</a></h3><ul>
+<li>Like charges repel, unlike charges attract</li>
+<li>$F = \frac{1}{4\pi\epsilon}\frac{q_1q_2}{r^2} = \frac{kq_1q_2}{r^2}$ </li>
+<li>$ε_0 = 8.85\times 10^{-12}$, $k = 8.89\times 10^9$</li>
+</ul>
+<h3 id="comparing-the-size-of-the-electric-force-to-gravity">comparing the size of the electric force to gravity<a class="anchor-link" href="#comparing-the-size-of-the-electric-force-to-gravity">&#182;</a></h3><ul>
+<li>Assume $e^-$ performs uniform circular motion</li>
+<li>$\frac{F_g}{F_e}= \frac{kq^2}{G m_e m_p} \approx 10^{39}$</li>
+</ul>
+<h3 id="materials">materials<a class="anchor-link" href="#materials">&#182;</a></h3><ul>
+<li>Metals – some $e^-$ are free to move</li>
+<li>Insulators – $e^-$ are not free to move</li>
+<li>Charging Objects – a transfer of $e^-$</li>
+</ul>
+<h3 id="charging-process">charging process<a class="anchor-link" href="#charging-process">&#182;</a></h3><ul>
+<li>2 Types<ul>
+<li>Charging by friction</li>
+<li>Charging by induction</li>
+</ul>
+</li>
+<li>Charging by friction<ul>
+<li>The rubbing of the two materials cause a flow of electrons from one substance to another</li>
+</ul>
+</li>
+<li>Charging by induction<ul>
+<li>A positively charged rod repels the charged ball</li>
+<li>When the positively charge rod is brought close to the 2 neutral spheres, the free electrons move to the charged rod</li>
+<li>When the balls are separated, they are now charged and either attract or repel the ball depending on their charge</li>
+</ul>
+</li>
+</ul>
+<hr>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<hr>
+<h1 id="electric-fields">electric fields<a class="anchor-link" href="#electric-fields">&#182;</a></h1><h3 id="concept-of-a-field">concept of a field<a class="anchor-link" href="#concept-of-a-field">&#182;</a></h3><ul>
+<li>A field is a way of conceptualizing and mapping a force that surrounds any object and acts on another object at a distance without any apparent physical contact</li>
+<li>In Coulombs Law, the equation depends on a point charge and test charge</li>
+<li>To simplify things we prefer that the field depends on the point charge rather than the test charge</li>
+<li>$E = \frac{F}{q}$, where $F$ is the Coulomb force and $q$ is the point charge, $E$ is in $\frac{Newtons}{Coulomb}$</li>
+<li>$E = \frac{kQ}{r^2}$</li>
+</ul>
+<hr>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<hr>
+<h1 id="electric-field-lines">electric field lines<a class="anchor-link" href="#electric-field-lines">&#182;</a></h1><h3 id="definition">definition<a class="anchor-link" href="#definition">&#182;</a></h3><ul>
+<li>Drawing lines to represent electric fields around charged objects are useful in visual strength and direction since it is a vector</li>
+<li>For an electric charge, if it is negative they point radially inward</li>
+<li>For positive charges, they point radially outward</li>
+</ul>
+<h3 id="electric-field-due-to-%E2%80%98continuous%E2%80%99-charge-distribution">electric field due to &#8216;continuous&#8217; charge distribution<a class="anchor-link" href="#electric-field-due-to-%E2%80%98continuous%E2%80%99-charge-distribution">&#182;</a></h3><ul>
+<li>Uniform line of charge $= \lambda = \frac{charge}{length}$</li>
+<li>Uniform Sheet of Charge $= \sigma = \frac{charge}{area}$</li>
+<li>$E = \frac{\lambda}{2\pi\epsilon d}$</li>
+<li>Infinite Plane $= E =\frac{\sigma}{2\epsilon}$ </li>
+</ul>
+<h3 id="motion-of-$e%5E-$-in-constant-$E$">motion of $e^-$ in constant $E$<a class="anchor-link" href="#motion-of-$e%5E-$-in-constant-$E$">&#182;</a></h3><ul>
+<li>When an $e^-$ is placed in a constant electric field we can find its motion or acceleration from <ul>
+<li>$F = qE$</li>
+<li>$a = \frac{qE}{m}$</li>
+</ul>
+</li>
+</ul>
+<hr>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<hr>
+<h1 id="electric-potential-and-electric-field">electric potential and electric field<a class="anchor-link" href="#electric-potential-and-electric-field">&#182;</a></h1><h3 id="electric-potential-energy:-potential-difference">electric potential energy: potential difference<a class="anchor-link" href="#electric-potential-energy:-potential-difference">&#182;</a></h3><ul>
+<li>When a free charge is accelerated in an electric field it gains kinetic energy</li>
+<li>The sign on the charge indicates in which what it will accelerate</li>
+<li>We know $W=Fd\cos\theta$ and $F=qE$ so we define electric potential as $V=\frac{U}{q}$ </li>
+<li>This is electrical potential energy per unit charge </li>
+<li>1 electron volt $= 1 eV = 1.602\times 10^{-19}$</li>
+</ul>
+<h3 id="electric-potential-in-a-uniform-electric-field">electric potential in a uniform electric field<a class="anchor-link" href="#electric-potential-in-a-uniform-electric-field">&#182;</a></h3><ul>
+<li>Parallel plates allow for simple equations to be made </li>
+<li>For parallel plates, $E = \frac{V}{d}$</li>
+<li>This is the relationship of the electric field and voltage for parallel plates and uniform electric field</li>
+</ul>
+<h3 id="electrical-potential-due-to-a-point-charge">electrical potential due to a point charge<a class="anchor-link" href="#electrical-potential-due-to-a-point-charge">&#182;</a></h3><ul>
+<li>The electric potential for a point charge is given by $V = \frac{kQ}{r}$</li>
+</ul>
+<h3 id="equipotential-lines">equipotential lines<a class="anchor-link" href="#equipotential-lines">&#182;</a></h3><ul>
+<li>Electric fields and electric potential are heavily related</li>
+<li>We can imagine this graphically by drawing lines where the electric potential is constant</li>
+<li>When these two are combined, we can see that the electric field and the electric potential are perpendicular</li>
+<li>The electric potential lines are called equipotential lines</li>
+</ul>
+<h3 id="capacitors-and-dielectrics">capacitors and dielectrics<a class="anchor-link" href="#capacitors-and-dielectrics">&#182;</a></h3><ul>
+<li>Capacitors<ul>
+<li>A capacitor is a device that is used to store charge</li>
+<li>The amount of charge a capacitor can store depends on two major factors which are the applied voltage and size</li>
+<li>The parallel plate capacitor is the simplest form of this</li>
+<li>Capacitance can be calculated by the formula $C = \frac{Q}{V}$</li>
+<li>Coming back to the parallel plate capacitor, the capacitance can be found in the equation $C =\frac{\epsilon A}{d}$,  where $A$ is the area of the plates, and $\epsilon$ is the emissivity of free space</li>
+</ul>
+</li>
+<li>Dielectrics<ul>
+<li>You can only make the distance so small to increase capacitance</li>
+<li>The space in between the capacitors can be filled with an insulator called a dielectric to increase capacitance</li>
+<li>$C = \frac{k\epsilon A}{d}$, where $k$ is the dielectric constant</li>
+</ul>
+</li>
+</ul>
+<h3 id="capacitors-in-series-and-parallel">capacitors in series and parallel<a class="anchor-link" href="#capacitors-in-series-and-parallel">&#182;</a></h3><ul>
+<li>Capacitors in Series<ul>
+<li>$\frac{1}{C_{Tot}} = \frac{1}{C_1} + \frac{1}{C_2} …$</li>
+</ul>
+</li>
+<li>Capacitors in Parallel<ul>
+<li>$C_{Tot} = C_1 + C_2 …$</li>
+</ul>
+</li>
+</ul>
+<h3 id="energy-stored-in-capacitors">energy stored in capacitors<a class="anchor-link" href="#energy-stored-in-capacitors">&#182;</a></h3><ul>
+<li>Capacitors store potential energy</li>
+<li>It is stored in the electric field</li>
+<li>$U = \frac{CV^2}{2} = \frac{QV}{2} = \frac{Q^2}{2C} $</li>
+</ul>
+<hr>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<hr>
+<h1 id="electric-current,-resistance,-and-Ohm's-law">electric current, resistance, and Ohm's law<a class="anchor-link" href="#electric-current,-resistance,-and-Ohm's-law">&#182;</a></h1><h3 id="current">current<a class="anchor-link" href="#current">&#182;</a></h3><ul>
+<li>Current is the rate at which charge flows</li>
+<li>$I = \frac{\Delta Q}{\Delta t}$</li>
+<li>Drift Velocity<ul>
+<li>Electric signals move very fast, sometimes at $10^8 \frac{m}{s}$</li>
+<li>The average velocity of the electron is $\approx 0$</li>
+<li>Drift speed is introduced, which tells us the average velocity of the free charges</li>
+<li>$v_d = \frac{qEt}{m}$, where $q$ is the charge, $E$ is the electric field, $t$ is the time in-between collision, and $m$ is the mass</li>
+</ul>
+</li>
+<li>Drift Velocity and current have a relationship together</li>
+<li>$I = nqAv_d$ , where $n$ is the number of free charges per unit volume, $q$ is the charge…</li>
+</ul>
+<h3 id="Ohm%E2%80%99s-law:-resistance-and-simple-circuits">Ohm&#8217;s law: resistance and simple circuits<a class="anchor-link" href="#Ohm%E2%80%99s-law:-resistance-and-simple-circuits">&#182;</a></h3><ul>
+<li>Ohms Law: German physicist Georg Simon Ohm demonstrated that current flows through most substances with an applied voltage</li>
+<li>He found $I \propto V$</li>
+<li>Resistance and Simple Circuits<ul>
+<li>The electric property that impedes current is called resistance</li>
+<li>Resistance is, $R \propto \frac{1}{I}$</li>
+<li>This gives the relationship $V = IR$</li>
+<li>Resistance is in ohms ($\Omega$)</li>
+</ul>
+</li>
+</ul>
+<h3 id="resistance-and-resistivity">resistance and resistivity<a class="anchor-link" href="#resistance-and-resistivity">&#182;</a></h3><ul>
+<li>Material and shape dependence of resistance</li>
+<li>Resistance is proportional to its length and is inversely proportional to its cross-sectional area</li>
+<li>$R = \frac{pL}{A}$, where $p$ is the resistivity, $L$ is the length, and $A$ is the area</li>
+</ul>
+<h3 id="electric-power-and-energy">electric power and energy<a class="anchor-link" href="#electric-power-and-energy">&#182;</a></h3><ul>
+<li>$P = IV = \frac{V^2}{R} = I^2R$</li>
+</ul>
+<h3 id="alternating-current-vs.-direct-current">alternating current vs. direct current<a class="anchor-link" href="#alternating-current-vs.-direct-current">&#182;</a></h3><ul>
+<li>Direct Current is the flow of electric charge in one direction</li>
+<li>Alternating Current is the flow of electric charge that periodically reverses direction</li>
+<li>Average Power $= \frac{IV}{2}$</li>
+</ul>
+<hr>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<hr>
+<h1 id="circuits-and-DC-instruments">circuits and DC instruments<a class="anchor-link" href="#circuits-and-DC-instruments">&#182;</a></h1><h3 id="resistors-in-series-and-parallel">resistors in series and parallel<a class="anchor-link" href="#resistors-in-series-and-parallel">&#182;</a></h3><ul>
+<li>Resistors in Series  <ul>
+<li>$R_{Tot} = R_1 + R_2…$</li>
+</ul>
+</li>
+<li>Resistors in Parallel <ul>
+<li>$\frac{1}{R_{Tot}}= \frac{1}{R_1} + \frac{1}{R_2}…$</li>
+</ul>
+</li>
+</ul>
+<h3 id="Kirchhoff%E2%80%99s-rules">Kirchhoff&#8217;s rules<a class="anchor-link" href="#Kirchhoff%E2%80%99s-rules">&#182;</a></h3><ul>
+<li>Kirchhoff’s Current Rule (KCR)<ul>
+<li>The sum of all the currents entering a junction must equal the sum of all currents leaving the junction</li>
+<li>Conservation of charge</li>
+</ul>
+</li>
+<li>Kirchhoff’s Voltage Rule (KVR)<ul>
+<li>The algebraic sum of changes in potential around any closed circuit path must be zero</li>
+<li>$V_0 – IR_1 – IR_2 … = 0$</li>
+</ul>
+</li>
+</ul>
+<h3 id="DC-voltmeters-and-ammeters">DC voltmeters and ammeters<a class="anchor-link" href="#DC-voltmeters-and-ammeters">&#182;</a></h3><ul>
+<li>Voltmeters<ul>
+<li>Voltmeters are connected in parallel with whatever devices voltage is being measured </li>
+<li>It is in parallel because objects in parallel achieve the same potential difference</li>
+<li>Voltmeters have a very large resistance</li>
+<li>$V = I(R + r)$, where $r$ is a shunt resistor</li>
+</ul>
+</li>
+<li>Ammeters<ul>
+<li>Ammeters are connected in series with whatever devices current is being measured</li>
+<li>A series connection is used because objects in series have the same current</li>
+<li>Ammeters have small resistors</li>
+</ul>
+</li>
+</ul>
+<h3 id="DC-circuits-containing-resistors-and-capacitors">DC circuits containing resistors and capacitors<a class="anchor-link" href="#DC-circuits-containing-resistors-and-capacitors">&#182;</a></h3><ul>
+<li>An RC circuit is a circuit containing both a resistor and a capacitor</li>
+<li>Charging Capacitor<ul>
+<li>$\Delta V_C = V_0 (1 - e^{\frac{-t}{RC}})$, where $t$ is time, and $RC$ is resistance and capacitance</li>
+</ul>
+</li>
+<li>Discharging Capacitor <ul>
+<li>$\Delta V_C = V_0(e^{\frac{-t}{RC}})$</li>
+</ul>
+</li>
+</ul>
+<hr>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<hr>
+<h1 id="magnetism">magnetism<a class="anchor-link" href="#magnetism">&#182;</a></h1><h3 id="magnets">magnets<a class="anchor-link" href="#magnets">&#182;</a></h3><ul>
+<li>Magnets have universal characteristics</li>
+<li>Like poles repel, unlike poles attract</li>
+<li>It is impossible to have separate poles (splitting magnets just smaller magnets)</li>
+<li>A bar magnet is a magnetic dipole</li>
+</ul>
+<h3 id="ferromagnets-and-electromagnets">ferromagnets and electromagnets<a class="anchor-link" href="#ferromagnets-and-electromagnets">&#182;</a></h3><ul>
+<li>Few materials have strong magnetic effects</li>
+<li>Those materials are ferromagnetic</li>
+<li>Ferromagnets can be magnetized or induced to be made magnetic</li>
+<li>Electromagnetism is the use of current to make magnetic fields and it also makes temporary magnets</li>
+<li>Current is the source of magnetism</li>
+</ul>
+<h3 id="magnetic-fields">magnetic fields<a class="anchor-link" href="#magnetic-fields">&#182;</a></h3><ul>
+<li>The direction of the magnetic field is tangent to the field</li>
+<li>The strength of the field is proportional to the closeness of the lines</li>
+<li>Magnetic field lines can never cross</li>
+<li>Magnetic field lines are continuous, no beginning or end</li>
+</ul>
+<h3 id="magnetic-field-strength:-force-on-a-moving-charge">magnetic field strength: force on a moving charge<a class="anchor-link" href="#magnetic-field-strength:-force-on-a-moving-charge">&#182;</a></h3><ul>
+<li>It is important to understand that moving charge (current) creates the magnetic field but charges also experience the magnetic field</li>
+<li>This can be calculated and is seen in the equation <ul>
+<li>$F_{mag} = qvB\sin\theta$, where $q$ is charge, $v$ is velocity, $B$ is the magnetic field, $\theta$ is the angle between $B$ and $v$</li>
+</ul>
+</li>
+<li>The direction of the magnetic force can be found by the right-hand rule</li>
+</ul>
+<h3 id="force-on-a-moving-charge-applications">force on a moving charge applications<a class="anchor-link" href="#force-on-a-moving-charge-applications">&#182;</a></h3><ul>
+<li>Magnetic Force can cause a charged particle to move in a circular path</li>
+<li>This relation links magnetic force and uniform centripetal motion</li>
+<li>$qvB = \frac{mv^2}{r}$</li>
+</ul>
+<h3 id="the-Hall-effect">the Hall effect<a class="anchor-link" href="#the-Hall-effect">&#182;</a></h3><ul>
+<li>Magnetic field effects charges moving in a conductor</li>
+<li>The voltage across a current carrying conductor by a magnetic field is known as the Hall effect</li>
+<li>$V = vBI$</li>
+</ul>
+<h3 id="magnetic-force-on-a-current-carrying-conductor">magnetic force on a current carrying conductor<a class="anchor-link" href="#magnetic-force-on-a-current-carrying-conductor">&#182;</a></h3><ul>
+<li>The magnetic force on charge moving in a conductor is transmitted to the conductor itself</li>
+<li>$F = ILB\sin\theta$</li>
+<li>Direction of the magnetic field is formed by the corkscrew rule</li>
+</ul>
+<h3 id="magnetic-fields-produced-by-currents">magnetic fields produced by currents<a class="anchor-link" href="#magnetic-fields-produced-by-currents">&#182;</a></h3><ul>
+<li>Magnetic field created by a long straight wire<ul>
+<li>Same concept as corkscrew rule</li>
+<li>$B = \frac{\mu I}{2R}$, where $\mu$ is $4\times 10^{-7}$, and $r$ is the distance from the wire</li>
+</ul>
+</li>
+<li>Magnetic field created by a single loop<ul>
+<li>$B = \frac{\mu I}{2R}$</li>
+</ul>
+</li>
+<li>Magnetic field created by a solenoid<ul>
+<li>$B = n\mu I$,  where $n$ is the number of turns per unit length</li>
+</ul>
+</li>
+<li>Note: Currents in parallel in the same direction repel but currents in parallel in the opposite direction attract</li>
+</ul>
+<hr>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<hr>
+<h1 id="electromagnetic-induction,-and-AC-circuits">electromagnetic induction, and AC circuits<a class="anchor-link" href="#electromagnetic-induction,-and-AC-circuits">&#182;</a></h1><h3 id="induced-EMF-and-magnetic-flux">induced EMF and magnetic flux<a class="anchor-link" href="#induced-EMF-and-magnetic-flux">&#182;</a></h3><ul>
+<li>Magnetic flux is a measurement of total magnetic field which passes through an area</li>
+<li>$\Phi = BA\cos\theta$ , where $B$ is magnetic field, $A$ is the area, and $\theta$ is the angle between $B$ and the normal</li>
+<li>The three ways to change flux would be by changing the size of $B$, changing the area, or changing the angle</li>
+<li>Magnetic Flux also produces an EMF or voltage/potential difference </li>
+<li>$V = \frac{-\Delta\Phi}{\Delta t}$</li>
+<li>This is called Faraday’s Law and is described as the change in flux over time</li>
+</ul>
+<h3 id="Faraday%E2%80%99s-law-of-induction:-Lenz%E2%80%99s-law">Faraday&#8217;s law of induction: Lenz&#8217;s law<a class="anchor-link" href="#Faraday%E2%80%99s-law-of-induction:-Lenz%E2%80%99s-law">&#182;</a></h3><ul>
+<li>$V = \frac{-N\Delta\Phi}{\Delta t}$, $N$ is the number of turns in a coil</li>
+<li>The negative sign in the equation was introduced by Lenz’s Law which states the direction of the current induced by a changing magnetic field will create a field that opposes it</li>
+<li>If flux is increasing, induced $B$ in opposite direction</li>
+<li>If flux is decreasing, induced $B$ in same direction</li>
+</ul>
+<h3 id="motional-EMF">motional EMF<a class="anchor-link" href="#motional-EMF">&#182;</a></h3><ul>
+<li>This chapter shows how a rod in a circuit can be used to calculate things like speed of the rod etc.</li>
+<li>$V = -Bwv$</li>
+</ul>
+<h3 id="electric-generators">electric generators<a class="anchor-link" href="#electric-generators">&#182;</a></h3><ul>
+<li>Electric generators turn mechanical energy into electrical energy</li>
+<li>This is all based-on changes in the angle</li>
+<li>$V = -NBA\omega\sin(\omega t)$</li>
+</ul>
+<h3 id="transformers">transformers<a class="anchor-link" href="#transformers">&#182;</a></h3><ul>
+<li>Transformer do what their name implies, they transform voltages from one value to another</li>
+<li>They do this by having coils to introduce a flux</li>
+<li>The flux in the coils are equal as well, this allows us to write the expression</li>
+<li>$\frac{V_1}{N_1}=\frac{V_2}{N_2}$</li>
+<li>Also, if there is no power loss, we find the relation<ul>
+<li>$\frac{V_1}{V_2}=\frac{N_1}{N_2}=\frac{I_2}{I_1}$</li>
+</ul>
+</li>
+</ul>
+<hr>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<hr>
+<h1 id="electromagnetic-waves">electromagnetic waves<a class="anchor-link" href="#electromagnetic-waves">&#182;</a></h1><h3 id="Maxwell%E2%80%99s-equation">Maxwell&#8217;s equation<a class="anchor-link" href="#Maxwell%E2%80%99s-equation">&#182;</a></h3><ul>
+<li>James Clark Maxwell made a set of equations that show the relationship of EM</li>
+<li>Maxwell’s Equations state<ul>
+<li>Electric field lines originate on positive charges and terminate on negative charges. The strength of the force is also related to the electric constant</li>
+<li>Magnetic fields are continuous and magnetic monopoles do not exist. The strength of the magnetic force is related to the magnetic constant</li>
+<li>A changing magnetic field induces and electric field and the direction of it opposes the change</li>
+<li>Magnetic fields are generated by moving charges or by changing electric field</li>
+</ul>
+</li>
+<li>Maxwell also found that $\frac{1}{\sqrt{\mu\epsilon}}$ is equal to the speed of light</li>
+</ul>
+<h3 id="production-of-electromagnetic-waves">production of electromagnetic waves<a class="anchor-link" href="#production-of-electromagnetic-waves">&#182;</a></h3><ul>
+<li>Electro and magnetic waves propagate perpendicular to each other</li>
+<li>Electromagnetic waves are transverse waves</li>
+<li>$E = cB$, where $E$ is the electric field, $c$ is the speed of light, $B$ is the magnetic field</li>
+</ul>
+<h3 id="the-electromagnetic-spectrum">the electromagnetic spectrum<a class="anchor-link" href="#the-electromagnetic-spectrum">&#182;</a></h3><ul>
+<li>Frequency, wavelength, and speed have a relationship together</li>
+<li>It is $c = \lambda f$, where $c$ is the speed of light, $\lambda$ is the wavelength, $f$ is frequency</li>
+</ul>
+<h3 id="energy-in-electromagnetic-waves">energy in electromagnetic waves<a class="anchor-link" href="#energy-in-electromagnetic-waves">&#182;</a></h3><ul>
+<li>Energy Density $= \frac{Energy}{Volume} = \frac{\epsilon E^2}{2} + \frac{B^2}{2\mu}$ </li>
+<li>Intensity $= \frac{Power}{Area} = \frac{\epsilon E^2 c}{2}$</li>
+</ul>
+<hr>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<hr>
+<h1 id="wave-optics">wave optics<a class="anchor-link" href="#wave-optics">&#182;</a></h1><h3 id="Young%E2%80%99s-double-slit-experiment">Young&#8217;s double slit experiment<a class="anchor-link" href="#Young%E2%80%99s-double-slit-experiment">&#182;</a></h3><ul>
+<li>In Young’s experiment, he displayed that light acts like a wave<ul>
+<li>Bright fringe: $\sin\theta = \frac{m\lambda}{d}$</li>
+<li>Dark fringe: $\sin\theta = \frac{(m+\frac{1}{2})\lambda}{d}$ </li>
+</ul>
+</li>
+</ul>
+<h3 id="single-slit-interference">single slit interference<a class="anchor-link" href="#single-slit-interference">&#182;</a></h3><ul>
+<li>Light also interferes with single slits<ul>
+<li>Dark Fringe: $a\sin\theta = m\lambda$</li>
+</ul>
+</li>
+</ul>
+<h3 id="thin-film-interference">thin film interference<a class="anchor-link" href="#thin-film-interference">&#182;</a></h3><ul>
+<li>Because of reflection and refraction, light waves split up when passing through a thin film</li>
+<li>$\lambda_{film} = \frac{\lambda}{n}$</li>
+</ul>
+<h3 id="diffraction">diffraction<a class="anchor-link" href="#diffraction">&#182;</a></h3><ul>
+<li>Diffraction is the bending of waves around obstacles or an edge of an opening</li>
+<li>Huygens’ Principle<ul>
+<li>Every point on a wave front acts as a source of tiny wavelets that move forward with the same speed as the wave; the wave front at a later instant is the surface that is tangent to the wavelets.</li>
+</ul>
+</li>
+<li>Dark Fringes: $\sin\theta = \frac{m\lambda}{a}$</li>
+<li>Circular Diffraction<ul>
+<li>$\sin\theta = \frac{1.22\lambda}{D} $</li>
+</ul>
+</li>
+<li>Diffraction Grating is where there is an arrangement of closely spaced parallel slits<ul>
+<li>Principle Maxima of Diffraction Grating: $\sin\theta = \frac{m\lambda}{d}$</li>
+</ul>
+</li>
+</ul>
+<h3 id="polarization">polarization<a class="anchor-link" href="#polarization">&#182;</a></h3><ul>
+<li>Polarization by Reflection<ul>
+<li>Happens at Brewsters Angle</li>
+<li>$\theta_B = \tan^{-1}(\frac{n_2}{n_1})$</li>
+</ul>
+</li>
+<li>Polarization<ul>
+<li>$I_{Transmitted}=I_{\theta}\cos^2\theta$</li>
+</ul>
+</li>
+</ul>
+<hr>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<hr>
+<h1 id="quantum-physics">quantum physics<a class="anchor-link" href="#quantum-physics">&#182;</a></h1><h3 id="wave-particle-duality">wave-particle duality<a class="anchor-link" href="#wave-particle-duality">&#182;</a></h3><ul>
+<li>Light is a stream of particles</li>
+<li>Light is an EM wave</li>
+<li>Both motives are proved by different experiments</li>
+<li>Photons are light particles</li>
+<li>$E = hf$</li>
+<li>$p = \frac{h}{\lambda}$</li>
+<li>Intensity $= nhf$, where $n$ is the number of photons per area time</li>
+<li>Intensity $= \frac{\epsilon cE^2}{2}$</li>
+</ul>
+<h3 id="photoelectric-effect">photoelectric effect<a class="anchor-link" href="#photoelectric-effect">&#182;</a></h3><ul>
+<li>The photoelectric effect is an ejection of electrons from metal when shining light on a metal</li>
+<li>Stopping Potential<ul>
+<li>$KE_{Lost} = e\Delta V$</li>
+<li>When no $e^-$ at all cross this $\Delta V$ is the ‘stopping potential’</li>
+</ul>
+</li>
+<li>Threshold Frequency<ul>
+<li>Smallest frequency above which photoelectrons are ejected</li>
+<li>If $f &lt; f_0$, no photoelectrons are ejected no matter how intense
+### photon absorption</li>
+</ul>
+</li>
+<li>All photon energy is given to a single electron, the photon disappears and its energy becomes $KE$ of $e^-$ </li>
+<li>Conservation of Energy<ul>
+<li>$\frac{mv^2}{2} = hf – W_F$, where $W_F$ is the work function or binding energy</li>
+</ul>
+</li>
+</ul>
+<h3 id="compton-scattering">compton scattering<a class="anchor-link" href="#compton-scattering">&#182;</a></h3><ul>
+<li>$\Delta\lambda = \frac{h}{mc}(1 – \cos\theta)$</li>
+<li>Scattered x-ray photon has less energy than the incident one because some energy is transferred to “recoil electron”</li>
+</ul>
+<h3 id="matter-waves">matter waves<a class="anchor-link" href="#matter-waves">&#182;</a></h3><ul>
+<li>$p = \frac{h}{\lambda}$</li>
+<li>$λ = \frac{h}{mv}$</li>
+</ul>
+<h3 id="Heisenberg-uncertainty-principle">Heisenberg uncertainty principle<a class="anchor-link" href="#Heisenberg-uncertainty-principle">&#182;</a></h3><ul>
+<li>$\Delta x\Delta p \geq \frac{h}{4\pi}$, where $\Delta x$ is the uncertainty in $x$, and $\Delta p$ is the uncertainty in momentum</li>
+</ul>
+<h3 id="quantum-particle-in-a-box">quantum particle in a box<a class="anchor-link" href="#quantum-particle-in-a-box">&#182;</a></h3><ul>
+<li>In QM, a particle is described by a wave function</li>
+<li>This wave function is calculated by solving Schrodinger’s Equation</li>
+<li>The probability of finding the particle at between position $x$ and $x + \Delta x$ </li>
+<li>Let us put a particle in a box it cannot escape<ul>
+<li>Allowed wavelengths of the particle are $\lambda = \frac{2L}{n}$</li>
+<li>$E_{Tot} = \frac{h^2 n^2}{8 m L^2}$</li>
+</ul>
+</li>
+<li>In classical mechanics, a particle can have only kinetic energy. In QM, there are only certain energy states allowed</li>
+<li>Lowest possible energy state is when $n = 1$</li>
+</ul>
+<hr>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<hr>
+<h1 id="atomic-physics">atomic physics<a class="anchor-link" href="#atomic-physics">&#182;</a></h1><h3 id="Bohr-model">Bohr model<a class="anchor-link" href="#Bohr-model">&#182;</a></h3><ul>
+<li>Postulates<ul>
+<li>$e^-$ can exist in special non-radiating “stationary states”<ul>
+<li>Momentum $= L = n\hbar$</li>
+</ul>
+</li>
+<li>e- performs uniform circular motion about the nucleus<ul>
+<li>$r = n^2(\frac{h^2}{4 \pi^2 k e^2 m})$</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="energy-in-particles">energy in particles<a class="anchor-link" href="#energy-in-particles">&#182;</a></h3><ul>
+<li>$E = hf = 13.6 eV (\frac{1}{nf^2} - \frac{1}{ni^2} )$</li>
+</ul>
+<h3 id="quantum-mechanics-of-the-atom">quantum mechanics of the atom<a class="anchor-link" href="#quantum-mechanics-of-the-atom">&#182;</a></h3><ul>
+<li>There are 4 quantum numbers</li>
+<li>$n$ – principal states $= 1, 2, 3, 4, ...$</li>
+<li>$l$ – angular momentum $= 0, 1, 2, ... n-1$</li>
+<li>$m$ – z component of angular momentum $= -l, -l + 1, ..., 0, ..., l - 1, l$</li>
+<li>$s$ – spin angular momentum = $\pm\frac{1}{2}$</li>
+<li>Pauli Principle: Each electron in a multi-electron atom must have a different set of quantum numbers (each $e^-$ has its own state) </li>
+</ul>
+<hr>
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
